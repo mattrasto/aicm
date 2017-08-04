@@ -27,6 +27,10 @@ a:hover {
 	text-indent: 0;
 }
 
+.disabled {
+	color: #AAA !important;
+}
+
 #viz-container {
 	position: relative;
 	display: inline-block;
@@ -185,18 +189,18 @@ a:hover {
 	height: 32px;
 }
 
-#fake-checkbox {
+.fake-checkbox {
 	width: 26px;
 	height: 26px;
 	display: inline-block;
-	background-color: #777;
+	background-color: #D1E1FF;
 	border: 2px solid #333;
 	border-radius: 3px;
 	margin-top: 4px;
 	float: right;
 }
 
-#fake-checkbox:hover {
+.fake-checkbox:hover {
 	border-color: #94BAFF;
 	cursor: pointer;
 }
@@ -214,11 +218,11 @@ a:hover {
 	text-align: center;
 }
 
-#settings-menu ul li input[type=number]:hover {
+#settings-menu ul li input[type=number]:hover:not([disabled]) {
 	border-color: #94BAFF;
 }
 
-#settings-menu ul li input[type=number]:focus {
+#settings-menu ul li input[type=number]:focus:not([disabled]) {
 	outline: none;
 	border-color: #94BAFF;
 }

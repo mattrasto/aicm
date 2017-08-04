@@ -30,12 +30,12 @@
 	</div>
 	<div id="settings-menu">
 		<ul>
-			<li><span id="center-root">Center Root</span><!--<input type="checkbox" onchange="center_root()">--><div id="fake-checkbox"></div></li>
+			<li><span id="center-root">Center Root</span><div class="fake-checkbox" id="center-root-input" onclick="api_center_root()"></div></li>
 			<!-- <li><span id="color-mode" onClick="update_color_mode()">Color Mode</span><input type="checkbox"></li> -->
-			<li><span id="link-strength" onClick="update_link_strength()">Link Strength</span><input type="number"></li>
-			<li><span id="link-distance" onClick="update_link_distance()">Link Distance</span><input type="number"></li>
-			<li><span id="friction" onClick="update_friction()">Friction</span><input type="number"></li>
-			<li><span id="charge" onClick="update_charge()">Charge</span><input type="number"></li>
+			<li><span class="disabled" id="link-strength" onClick="update_link_strength()">Link Strength</span><input type="number" disabled></li>
+			<li><span class="disabled" id="link-distance" onClick="update_link_distance()">Link Distance</span><input type="number" disabled></li>
+			<li><span class="disabled" id="friction" onClick="update_friction()">Friction</span><input type="number" disabled></li>
+			<li><span class="disabled" id="charge" onClick="update_charge()">Charge</span><input type="number" disabled></li>
 		</ul>
 	</div>
 </div>

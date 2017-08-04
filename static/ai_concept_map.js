@@ -562,6 +562,17 @@ function toggle_node(d, top, direction) {
 	}
 }
 
+function api_center_root() {
+	console.log("Centering root");
+	if ($("#center-root-input").css("background-color") != "rgb(209, 225, 255)") {
+		$("#center-root-input").css("background-color", "#D1E1FF");
+	}
+	else {
+		$("#center-root-input").css("background-color", "#777");
+	}
+	center_root();
+}
+
 
 
 function update_sidebar(d) {
@@ -674,6 +685,7 @@ function update_sidebar(d) {
 		});
 	}
 }
+
 
 
 
