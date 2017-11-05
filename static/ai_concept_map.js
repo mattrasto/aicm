@@ -273,6 +273,17 @@ function init_viz() {
 			if (linked_nodes.indexOf(original_link_map[d.id][i]["source"].id) == -1) linked_nodes.push(original_link_map[d.id][i]["source"].id);
 			if (linked_nodes.indexOf(original_link_map[d.id][i]["target"].id) == -1) linked_nodes.push(original_link_map[d.id][i]["target"].id);
 		}
+		// Add nodes on path to root (by traversing up "derivative" links) to array
+		var cur_id = d.id;
+		while (cur_id != ROOT_ID) {
+			for (var i = 0; i < original_link_map[d.id].length; i++) {
+				if (original_link_map[cur_id][i]["target"].id == cur_id && original_link_map[cur_id][i]["type"] == "derivative") {
+					cur_id = original_link_map[cur_id][i]["source"].id;
+					linked_nodes.push(cur_id);
+					break;
+				}
+			}
+		}
 		// Update opacity of all nodes except immediately linked nodes
 		d3.selectAll(".node").transition().attr("opacity", function(x) {
 			if (linked_nodes.indexOf(x.id) == -1) {
@@ -282,13 +293,10 @@ function init_viz() {
 		});
 		// Update opacity of all links except immediate links
 		d3.selectAll(".link").transition().attr("opacity", function(x) {
-			for (var i = 0; i < original_link_map[d.id].length; i++) {
-				// QUESTION: Can this be simplified?
-				// TODO: Some links don't fade when a leaf node is selected
-				if (x.source.id != original_link_map[d.id][i].source.id && x.source.id != original_link_map[d.id][i].target.id &&
-					x.target.id != original_link_map[d.id][i].target.id && x.target.id != original_link_map[d.id][i].source.id) return LINK_FADE_OPACITY;
+			if (linked_nodes.indexOf(x.source.id) >= 0 && linked_nodes.indexOf(x.target.id) >= 0) {
+				return 1;
 			}
-			return "1";
+			return LINK_FADE_OPACITY;
 		});
 	}
 
