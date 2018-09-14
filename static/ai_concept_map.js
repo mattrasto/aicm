@@ -17,7 +17,15 @@ $(document).ready(function() {
             stop: function(event, ui) {}
     });
 
-    init_viz();
+    settings = {
+        'center_root': true,
+        'link_strength': .5,
+        'link_distance': 60,
+        'friction': .8,
+        'charge': -800
+    }
+
+    init_viz(settings);
 
     console.log("Visualization Loaded");
 });
@@ -39,20 +47,36 @@ function toggle_settings() {
 }
 
 // Gets JSON data and initializes D3 force graph
-function init_viz() {
+function init_viz(settings) {
+
+    // Clear old viz
+    $("#viz-container > svg").remove();
+    simulation = null;
+    _graph = null;
+    original_graph = null;
+    original_id_map = null;
+    original_link_map = null;
+    original_graph = null;
+    graph = null;
+    node_container = null;
+    link = null;
+    linked_nodes = [];
+
+    // Deep copy data for restoration
+    var viz_data = jQuery.extend(true, {}, ai_concept_map_data);
 
     // ID of root node
     ROOT_ID = "machine_learning";
     // Should the root node be centered?
-    CENTER_ROOT = true;
+    CENTER_ROOT = settings['center_root'];
     // Strength of links (how easily they can be compressed) between nodes [0, INF]
-    LINK_STRENGTH = .5;
+    LINK_STRENGTH = settings['link_strength'];
     // Distance between nodes [0, INF]
-    LINK_DISTANCE = 60;
+    LINK_DISTANCE = settings['link_distance'];
     // Charge between nodes [-INF, INF]
-    CHARGE = -800;
+    CHARGE = settings['charge'];
     // How easily particles are dragged across the screen [0, 1]
-    FRICTION = .8;
+    FRICTION = settings['friction'];
     // Node coloring scheme. Possible values:
     // "DISTANCE": Color nodes ordinally based on their "distance" attribute using the COLOR_KEY_DISTANCE map
     COLOR_MODE = "DISTANCE";
@@ -114,7 +138,7 @@ function init_viz() {
         .force("charge", d3.forceManyBody().strength(CHARGE))
         .force("center", d3.forceCenter(width / 2, height / 2))
 
-    _graph = ai_concept_map_data;
+    _graph = viz_data;
 
     // Transfer scope
     original_graph = _graph;
@@ -576,6 +600,12 @@ function api_center_root() {
         $("#center-root-input").css("background-color", "#777");
     }
     center_root();
+}
+
+// Updates one of the settings of the visualization
+function api_update_settings(setting, new_val) {
+    settings[setting] = new_val;
+    init_viz(settings)
 }
 
 

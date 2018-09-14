@@ -30,7 +30,7 @@
                 <ul>
                     <li><span id="center-root">Center Root</span><div class="fake-checkbox" id="center-root-input" onclick="api_center_root()"></div></li>
                     <!-- <li><span id="color-mode" onClick="update_color_mode()">Color Mode</span><input type="checkbox"></li> -->
-                    <li><span class="disabled" id="link-strength" onclick="update_link_strength()">Link Strength</span><input type="number" disabled></li>
+                    <li><span id="link-strength">Link Strength</span><input onchange="api_update_settings('link_strength', parseFloat(this.value))" type="number"></li>
                     <li><span class="disabled" id="link-distance" onclick="update_link_distance()">Link Distance</span><input type="number" disabled></li>
                     <li><span class="disabled" id="friction" onclick="update_friction()">Friction</span><input type="number" disabled></li>
                     <li><span class="disabled" id="charge" onclick="update_charge()">Charge</span><input type="number" disabled></li>
