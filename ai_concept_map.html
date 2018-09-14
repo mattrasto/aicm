@@ -30,10 +30,38 @@
                 <ul>
                     <li><span id="center-root">Center Root</span><div class="fake-checkbox" id="center-root-input" onclick="api_center_root()"></div></li>
                     <!-- <li><span id="color-mode" onClick="update_color_mode()">Color Mode</span><input type="checkbox"></li> -->
-                    <li><span id="link-strength">Link Strength</span><input onchange="api_update_settings('link_strength', parseFloat(this.value))" type="number"></li>
-                    <li><span id="link-distance">Link Distance</span><input onchange="api_update_settings('link_distance', parseFloat(this.value))" type="number"></li>
-                    <li><span id="friction">Friction</span><input onchange="api_update_settings('friction', parseFloat(this.value))" type="number"></li>
-                    <li><span id="charge">Charge</span><input onchange="api_update_settings('charge', parseFloat(this.value))" type="number"></li>
+                    <li>
+                        <span>Link Strength</span>
+                        <div class="settings-menu-type">
+                            <span>0</span>
+                            <input onchange="api_update_settings('link_strength', parseFloat(this.value))" type="number" value=".5" />
+                            <span>1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <span>Link Distance</span>
+                        <div class="settings-menu-type">
+                            <span>1</span>
+                            <input onchange="api_update_settings('link_distance', parseFloat(this.value))" type="number" value="60">
+                            <span>∞</span>
+                        </div>
+                    </li>
+                    <li>
+                        <span>Friction</span>
+                        <div class="settings-menu-type">
+                            <span>0</span>
+                            <input onchange="api_update_settings('friction', parseFloat(this.value))" type="number" value=".8">
+                            <span>1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <span>Charge</span>
+                        <div class="settings-menu-type">
+                            <span>-1000</span>
+                            <input onchange="api_update_settings('charge', parseFloat(this.value))" type="number" value="-800">
+                            <span>1000</span>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
