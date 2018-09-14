@@ -152,7 +152,7 @@ a:hover {
     position: absolute;
     top: 10px;
     left: 60px;
-    width: 300px;
+    width: 340px;
     background-color: #555;
     opacity: .8;
     border-top-right-radius: 5px;
@@ -179,8 +179,12 @@ a:hover {
     line-height: 32px;
 }
 
-#settings-menu ul li input {
+.settings-menu-type {
+    display: inline-block;
     float: right;
+}
+
+#settings-menu ul li input {
     height: 24px;
 }
 
