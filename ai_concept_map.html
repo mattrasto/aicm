@@ -34,7 +34,7 @@
                         <span>Link Strength</span>
                         <div class="settings-menu-type">
                             <span>0</span>
-                            <input onchange="api_update_settings('link_strength', parseFloat(this.value))" type="number" value=".5" />
+                            <input id="link-strength-input" onchange="api_update_settings('link_strength', parseFloat(this.value))" type="number" value=".5" />
                             <span>1</span>
                         </div>
                     </li>
@@ -42,7 +42,7 @@
                         <span>Link Distance</span>
                         <div class="settings-menu-type">
                             <span>1</span>
-                            <input onchange="api_update_settings('link_distance', parseFloat(this.value))" type="number" value="60">
+                            <input id="link-distance-input" onchange="api_update_settings('link_distance', parseFloat(this.value))" type="number" value="60">
                             <span>∞</span>
                         </div>
                     </li>
@@ -50,7 +50,7 @@
                         <span>Friction</span>
                         <div class="settings-menu-type">
                             <span>0</span>
-                            <input onchange="api_update_settings('friction', parseFloat(this.value))" type="number" value=".8">
+                            <input id="friction-input" onchange="api_update_settings('friction', parseFloat(this.value))" type="number" value=".8">
                             <span>1</span>
                         </div>
                     </li>
@@ -58,7 +58,7 @@
                         <span>Charge</span>
                         <div class="settings-menu-type">
                             <span>-1000</span>
-                            <input onchange="api_update_settings('charge', parseFloat(this.value))" type="number" value="-800">
+                            <input id="charge-input" onchange="api_update_settings('charge', parseFloat(this.value))" type="number" value="-800">
                             <span>1000</span>
                         </div>
                     </li>

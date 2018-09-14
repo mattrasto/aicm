@@ -592,7 +592,6 @@ function toggle_node(d, top, direction) {
 }
 
 function api_center_root() {
-    console.log("Centering root");
     if ($("#center-root-input").css("background-color") != "rgb(209, 225, 255)") {
         $("#center-root-input").css("background-color", "#D1E1FF");
     }
@@ -604,6 +603,22 @@ function api_center_root() {
 
 // Updates one of the settings of the visualization
 function api_update_settings(setting, new_val) {
+    if (setting == "link_strength") {
+        new_val = Math.max(Math.min(new_val, 1), 0);
+        $("#link-strength-input").val(new_val);
+    }
+    else if (setting == "link_distance") {
+        new_val = Math.max(new_val, 1);
+        $("#link-distance-input").val(new_val);
+    }
+    if (setting == "friction") {
+        new_val = Math.max(Math.min(new_val, 1), 0);
+        $("#friction-input").val(new_val);
+    }
+    if (setting == "charge") {
+        new_val = Math.max(Math.min(new_val, 1000), -1000);
+        $("#charge-input").val(new_val);
+    }
     settings[setting] = new_val;
     init_viz(settings)
 }
