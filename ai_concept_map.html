@@ -31,9 +31,9 @@
                     <li><span id="center-root">Center Root</span><div class="fake-checkbox" id="center-root-input" onclick="api_center_root()"></div></li>
                     <!-- <li><span id="color-mode" onClick="update_color_mode()">Color Mode</span><input type="checkbox"></li> -->
                     <li><span id="link-strength">Link Strength</span><input onchange="api_update_settings('link_strength', parseFloat(this.value))" type="number"></li>
-                    <li><span class="disabled" id="link-distance" onclick="update_link_distance()">Link Distance</span><input type="number" disabled></li>
-                    <li><span class="disabled" id="friction" onclick="update_friction()">Friction</span><input type="number" disabled></li>
-                    <li><span class="disabled" id="charge" onclick="update_charge()">Charge</span><input type="number" disabled></li>
+                    <li><span id="link-distance">Link Distance</span><input onchange="api_update_settings('link_distance', parseFloat(this.value))" type="number"></li>
+                    <li><span id="friction">Friction</span><input onchange="api_update_settings('friction', parseFloat(this.value))" type="number"></li>
+                    <li><span id="charge">Charge</span><input onchange="api_update_settings('charge', parseFloat(this.value))" type="number"></li>
                 </ul>
             </div>
         </div>
