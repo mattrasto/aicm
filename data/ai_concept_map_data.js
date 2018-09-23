@@ -9,7 +9,7 @@ const ai_concept_map_data = {
 		{"source": "machine_learning", "target": "semi_supervised_learning", "type": "derivative"},
 		{"source": "supervised_learning", "target": "svm", "type": "derivative"},
 		{"source": "supervised_learning", "target": "neural_nets", "type": "derivative"},
-		{"source": "supervised_learning", "target": "markov_chains", "type": "derivative"},
+		{"source": "supervised_learning", "target": "markov_model", "type": "derivative"},
 		{"source": "supervised_learning", "target": "regressions", "type": "derivative"},
 		{"source": "supervised_learning", "target": "naive_bayes", "type": "derivative"},
 		{"source": "svm", "target": "nonlinear_svm", "type": "derivative"},
@@ -24,8 +24,8 @@ const ai_concept_map_data = {
 		{"source": "neural_nets", "target": "self_organ_maps", "type": "derivative"},
 		{"source": "neural_nets", "target": "adapt_reson_theory", "type": "derivative"},
 		{"source": "neural_nets", "target": "replicator_nn", "type": "derivative"},
-		{"source": "markov_chains", "target": "markov_model", "type": "derivative"},
-		{"source": "markov_chains", "target": "hidden_markov_model", "type": "derivative"},
+		{"source": "markov_model", "target": "markov_chains", "type": "derivative"},
+		{"source": "markov_model", "target": "hidden_markov_model", "type": "derivative"},
 		{"source": "regressions", "target": "log_regression", "type": "derivative"},
 		{"source": "regressions", "target": "linear_regressions", "type": "derivative"},
 		{"source": "linear_regressions", "target": "multi_linear_regression", "type": "derivative"},
@@ -56,7 +56,7 @@ const ai_concept_map_data = {
 		{"source": "ensemble_methods", "target": "rotation_forest", "type": "derivative"},
 		{"source": "ensemble_methods", "target": "boot_aggregated", "type": "derivative"},
 		{"source": "density_techniques", "target": "local_outlier", "type": "derivative"},
-		{"source": "density_techniques", "target": "knn", "type": "related"},
+		{"source": "density_techniques", "target": "knn", "type": "derivative"},
 		{"source": "dimen_reduction", "target": "bayesian_models", "type": "derivative"},
 		{"source": "dimen_reduction", "target": "missing_values", "type": "derivative"},
 		{"source": "dimen_reduction", "target": "low_var_filter", "type": "derivative"},
@@ -119,8 +119,8 @@ const ai_concept_map_data = {
 		{"source": "semi_supervised_learning", "target": "gan", "type": "derivative"},
 		{"source": "low_density_separation", "target": "transductive_svm", "type": "derivative"},
 		{"source": "reinforcement_learning", "target": "evo_strategies", "type": "derivative"},
-		{"source": "reinforcement_learning", "target": "markov_chains", "type": "derivative"},
-		{"source": "markov_chains", "target": "markov_decision_processes", "type": "derivative"},
+		{"source": "reinforcement_learning", "target": "markov_model", "type": "derivative"},
+		{"source": "markov_model", "target": "markov_decision_processes", "type": "derivative"},
 		{"source": "rec_neural_nets", "target": "clock_rnn", "type": "derivative"},
 		{"source": "rec_neural_nets", "target": "gru", "type": "derivative"},
 		{"source": "rec_neural_nets", "target": "neural_programmer", "type": "derivative"},
@@ -418,7 +418,7 @@ const ai_concept_map_data = {
 		{
 			"id": "act_rnn",
 			"name": "Adaptive Computation Time RNN",
-			"description": "",
+			"description": "The ACT algorithm is a modification on traditional RNN architectures that allows the model to view each sample multiple times. This allows the neural net to learn how many times it needs to view each example to predict it correctly - instead of requiring a large amount of the same symbols over and over, ACT optimizes this by intelligently choosing which examples to review. When we study for exams, we don't repeat flashcards or problems we can solve with ease; similarly, ACT only repeats ones that it sruggles with identifying until the probability of correct classification is high enough.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -440,7 +440,7 @@ const ai_concept_map_data = {
 		{
 			"id": "neural_programmer",
 			"name": "Neural Programmer",
-			"description": "",
+			"description": "A Neural Programmer is a neural network with some added built-in functionality, namely arithmetic and logic. Humans learn arithmetic and logic quickly, but neural networks don't have this innate ability. The Neural Programer determines when to use these operations by inferring them from the training samples, and can chain together these operations to achieve a high accuracy for some problems.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -528,7 +528,7 @@ const ai_concept_map_data = {
 		{
 			"id": "stacked_autoencoders",
 			"name": "Stacked Autoencoders",
-			"description": "",
+			"description": "Some neural network architectures may benefit by using autoencoders in middle layers to reduce the 'representation' of the data into a compressed form. Stacked autoencoders are just this: neural networks with sparse autoencoder layers embedded as a hidden layer.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -550,7 +550,7 @@ const ai_concept_map_data = {
 		{
 			"id": "svm",
 			"name": "Support Vector Machines",
-			"description": "",
+			"description": "SVMs are classifiers that distinguish between groups using a 'maximum-margin hyperplane,' which you can think of as a line separating examples from a dataset that is as wide as possible. By finding the widest line separating examples between the two classes, we assume this division is the best classification. SVMs are typically used as binary classifiers, though there are modified algorithms that can be used for multi-class classification. While typically SVMs are used for linear classification, you can map their inputs into high-dimensional feature spaces and then using a linear classifier in this high-dimensional feature space. This is called the 'kernel trick.'",
 			"when": {
 					"description": "",
 					"cases": []
@@ -572,7 +572,7 @@ const ai_concept_map_data = {
 		{
 			"id": "nonlinear_svm",
 			"name": "Non-Linear SVM",
-			"description": "",
+			"description": "A non-linear SVM is simply an SVM that uses the kernel trick to classify datasets that aren't linearly separable. If you wish to use an SVM on a dataset best fit using, say, a quadratic function, then you'll need to use a proper kernel function (also known as a 'Mercer kernel') to map the data to a high-dimensional feature space in which you can linearly separate the data. Note that there are a limited number of kernel functions which can be used, as they must satisfy a few conditions in order to be viable. Most machine learning libraries support non-linear SVMs and provide these kernel functions for use.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -594,7 +594,7 @@ const ai_concept_map_data = {
 		{
 			"id": "linear_svm",
 			"name": "Linear SVM",
-			"description": "",
+			"description": "A linear SVM is a traditional SVM that is able to classify datasets that are linearly separable. The SVM operates by finding two parallel planes (in 2D, these are lines) that successfully separate the data and calculating the distance between these two planes. The distance is called the margin, as it represents the margin between the two datasets. The SVM then attempts to find the two planes which result in the largest margin, indicating the largest distance between the datasets given any two planes.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -616,7 +616,7 @@ const ai_concept_map_data = {
 		{
 			"id": "naive_bayes",
 			"name": "Naive Bayes",
-			"description": "",
+			"description": "Naive Bayes is a classifier based on statistics calculated on the existing dataset. It's friendly to high-dimensional data, and can be applied to both numeric and non-numeric data (though the latter is more common). Depending on the type of classifier used (there are typically three types: Gaussian, Bernoulli, and Multinomial), the exact statistics and formulas are used. In a Gaussian Naive Bayes classifier, the probabilities for a new sample are provided in terms of 'probability that new sample is class X' and 'ratio of all samples that are class X to all samples.' From this, we multiply both probabilities to find the 'prior probability' for each class, which is used to classify the new sample. Because samples are classified based on a combination of past classification ratios and an analysis of 'samples like it,' it is well-suited for realtime classification.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -638,7 +638,7 @@ const ai_concept_map_data = {
 		{
 			"id": "regressions",
 			"name": "Regressions",
-			"description": "",
+			"description": "A regression is a measure of the relationship between a dependent variable (in machine learning, this is the class or Y) and one or more independent variables (the features). There are multiple ways to perform regression, but the goal is always to find some mathematical representation of this relationship. You can think of it as an 'approximation line' that could be straight, curved, or all manners of misshapen as long as it is mathematically representable.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -660,7 +660,7 @@ const ai_concept_map_data = {
 		{
 			"id": "log_regression",
 			"name": "Logistic Regression",
-			"description": "",
+			"description": "A logistic regression is a type of regression that maps the input data to a certain class, typically 0 or 1. It uses the logit function, which outputs a number within [0, 1] that can be interpreted as the probability of that prediction being correct. You can use logistic regression with two classes, called binary logistic regression, three or more categories without ordering, called multinomial logistic regression, or three or more classes with ordering, called ordinal logistic regression.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -682,7 +682,7 @@ const ai_concept_map_data = {
 		{
 			"id": "multi_linear_regression",
 			"name": "Multiple Linear Regression",
-			"description": "",
+			"description": "A multiple linear regression is a type of linear regression with multiple features. That's it - if you have more than one feature, then a linear regression is called a multiple linear regression. It can be used for prediction, but also for determining which features are most important. If your dataset is properly scaled to the number of features you have (typically recommended to be at least 10-20 times larger) then you can inspect the weights on each feature after training to answer the question 'what is the best predictor of Y?'",
 			"when": {
 					"description": "",
 					"cases": []
@@ -704,7 +704,7 @@ const ai_concept_map_data = {
 		{
 			"id": "linear_regressions",
 			"name": "Linear Regressions",
-			"description": "",
+			"description": "A linear regression is a type of regression that maps the input data to a number. Linear regression is among the most widely used statistical techniques, as it's extremely simple but works in many scenarios. For example, in predicting the price of vegatables sold by the pound at your nearest market, a linear regression performs perfectly: there is one feature, vegetable weight, that has a linear (straight line) correlation with the price you'll pay.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -726,7 +726,7 @@ const ai_concept_map_data = {
 		{
 			"id": "simple_linear_regression",
 			"name": "Simple Linear Regression",
-			"description": "",
+			"description": "A simple linear regression is a type of linear regression where there are only two variables: the independent variable (X) and the dependent variable (Y). It can be visualized as a 2D scatter plot where you attempt to fit the data by drawing a straight line through it.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -748,7 +748,7 @@ const ai_concept_map_data = {
 		{
 			"id": "curvilinear_regression",
 			"name": "Curvilinear Regression",
-			"description": "",
+			"description": "A curvilinear regression is a type of regression that produces a curved line to fit the data. There are multiple equations for curved lines, such as exponential, power, logarithmic, trigonometric, and more. You can use similar, though slightly modified, equations to vanilla linear regression to fit these curved lines to the dataset.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -770,7 +770,7 @@ const ai_concept_map_data = {
 		{
 			"id": "poly_regression",
 			"name": "Polynomial Regression",
-			"description": "",
+			"description": "Polynomial regression is a popular type of curivilinear regression. Polynomial regression is similar to multilinear regression except that instead of each weight being linear, they can also be exponential. In the case where only one independent variable is used, you simply add more weight terms increasing in power until you achieve satisfactory accuracy or give up. While you could theoretically form any curve from a polynomial regression, it's rare to find high-exponent weights, particularly for datasets with high dimensionality, since it becomes much more computationally expensive with every added feature or exponent.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -792,7 +792,7 @@ const ai_concept_map_data = {
 		{
 			"id": "markov_chains",
 			"name": "Markov Chains",
-			"description": "",
+			"description": "Markov chains are a process which can be though of as a chain of states. Each state has a few arrows going to other states, each one with a probability that indicates how likely it is for that arrow to be crossed (that is, how likely it is for the process to move from the first state to the next one along that arrow). Markov chains, and in fact any Markov process, follow the Markov property, which states that the next state a process will enter *only* depends on the current state. While Markov chains themselves aren't particularly useful for machine learning, the Markov property is fundamental to some concepts within the space. Additionally, Markov chains are useful for modeling random processes and serve as an excellent tool for introductory modeling.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -814,7 +814,7 @@ const ai_concept_map_data = {
 		{
 			"id": "markov_model",
 			"name": "Markov Model",
-			"description": "",
+			"description": "Markov models are stochastic models used to model randomly changing systems. Any system modeled by a Markov model follows the Markov property, which states that the next state a process will enter *only* depends on the current state. Markov models are used in some machine learning models where it's important to assume that only the current state is important in predicting the next state.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -836,7 +836,7 @@ const ai_concept_map_data = {
 		{
 			"id": "hidden_markov_model",
 			"name": "Hidden Markov Model",
-			"description": "",
+			"description": "Hidden markov models are Markov chains in which the state is partially observable and thus can only be imprecisely determined. This is useful for some models, such as in speech signal classification where signals (voice data) are complex but can be decoded in a Markov chain by determining the most likely 'path' through the model in terms of a sequence of words.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -858,7 +858,7 @@ const ai_concept_map_data = {
 		{
 			"id": "unsupervised_learning",
 			"name": "Unsupervised Learning",
-			"description": "",
+			"description": "Unsupervised learning is a field in machine learning where the data has no labels - only independent variables. Given a dataset with only descriptive variables, unsupervised models attempt infer patterns on this dataset - that is, infer the dependent variables with no prior examples of labels. A common task is clustering, which is used to partition the data into reasonable groups or classes.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -880,7 +880,7 @@ const ai_concept_map_data = {
 		{
 			"id": "semi_supervised_learning",
 			"name": "Semi-Supervised Learning",
-			"description": "",
+			"description": "Semi-supervised learning is a field that utilizes models capable of combining both labeled and unlabeled data. Typically, these models are supervised models that perform well with unlabeled data. However, there are also some models that fall into neither supervised nor unsupervised learning that may be described as semi-supervised, such as generative adversarial models.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -902,7 +902,7 @@ const ai_concept_map_data = {
 		{
 			"id": "reinforcement_learning",
 			"name": "Reinforcement Learning",
-			"description": "",
+			"description": "Reinforcement learning is a field with an entirely different problem statement than supervised and unsupervised methods. In reinforcement learning, you have agents, actions, an environment, and a reward function. Agents live in an environment (state space) that can perform a certain set of actions and must use these actions to progress to a state in their environment that maximizes their cumulative reward. For example, in video games you have a character (agent), some controls (actions), a level or playing field (environment), and a reward function (points, gold, or a goal: win).",
 			"when": {
 					"description": "",
 					"cases": []
@@ -924,7 +924,7 @@ const ai_concept_map_data = {
 		{
 			"id": "anomaly_detection",
 			"name": "Anomaly Detection",
-			"description": "",
+			"description": "Anomaly detection is the field focused on detecting outliers in a dataset. When data has a certain pattern to it, such as bank users making payments on a regular basis, outliers can be detected by identifying abnormal behavior in the dataset.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -968,7 +968,7 @@ const ai_concept_map_data = {
 		{
 			"id": "structured_prediction",
 			"name": "Structured Prediction",
-			"description": "",
+			"description": "Structured prediction, or structured prediction, is a general term for classification or regression with an interpretable structure or framework. One of the complaints of machine learning, specifically with neural networks, is that we 'don't know what they're doing.' Structured learning is accomplished by using models that tell us what they're doing, such as decision trees. If a classification can be made by saying 'if this variable is less than 10, this sample is this class, otherwise it's the other class,' then structured prediction may not only be viable, but more helpful for researchers to use and understand.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1034,7 +1034,7 @@ const ai_concept_map_data = {
 		{
 			"id": "regression_trees",
 			"name": "Regression Trees",
-			"description": "",
+			"description": "Regression trees are decision trees that can take and operate on continuous dependent variables. In cases where the output of the decision tree should be a continuous variable instead of a class, you'll want to use regression trees.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1056,7 +1056,7 @@ const ai_concept_map_data = {
 		{
 			"id": "ensemble_methods",
 			"name": "Ensemble Methods",
-			"description": "",
+			"description": "Ensemble methods are techniques that generate multiple independent models and combine them after they are individually trained to improve performance. Ensembles are especially useful for models prone to overfitting or focusing on outliers, as it aggregates the models. This reduces reliance on any particular pattern unless it's relevant across a large subset of the individual models, which is likely what we'd hope to occur.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1078,7 +1078,7 @@ const ai_concept_map_data = {
 		{
 			"id": "boosted_trees",
 			"name": "Boosted Trees",
-			"description": "",
+			"description": "Gradient boosted trees are decision trees or decision forests to which gradient boosting is applied. Gradient boosting can be thought of as an optimization of the cost function such that gradients are more likely to point in the negative direction. When applied to individual decision trees, the quality of fit of each model is improved. This causes boosted trees to perform similar to decision forests, in that abnormalities are smoothed out; with decision forests, this is done through aggregation, while for boosted trees this is done on the individual model.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1100,7 +1100,7 @@ const ai_concept_map_data = {
 		{
 			"id": "rotation_forest",
 			"name": "Rotation Forest",
-			"description": "",
+			"description": "Rotation forests are a special type of decision forest intended to better represent feature diversity. Before training, the data is separated into subsets and Principal Component Analysis (PCA) is applied to each subset. The principal components are then used to train a tree with the entire dataset. Once all decision trees have been trained with the whole dataset (using only their respective principal components), they are aggregated.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1122,7 +1122,7 @@ const ai_concept_map_data = {
 		{
 			"id": "boot_aggregated",
 			"name": "Bootstrap Aggregated",
-			"description": "",
+			"description": "Bootstrap Aggregating, or bagging, is another type of aggregation method commonly appled to decision trees (though it can also be applied to any method). Instead of training multiple decision trees with the entire dataset, as with vanilla decision forests, only a subset of the data is used to train each base classifier (tree). They are then combined to form a forest. The goal of bagging is to better represent feature diversity by randomly sampling the dataset.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1144,7 +1144,7 @@ const ai_concept_map_data = {
 		{
 			"id": "rand_forest",
 			"name": "Random Forest",
-			"description": "",
+			"description": "A random forest is an aggregation method by which decision trees are combined into a single classifier. A single decision tree may be prone to overfitting or being weighted towards certain data abnormalities, but a random forest mitigates these issues by combining multiple classifiers in the hope that the ensemble will better represent the data's true nature and \"smooth\" out the abnormalities.",
 			"when": {
 					"description": "",
 					"cases": []
