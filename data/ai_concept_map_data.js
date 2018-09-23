@@ -1782,7 +1782,7 @@ const ai_concept_map_data = {
 		{
 			"id": "low_var_filter",
 			"name": "Low Variance Filter",
-			"description": "",
+			"description": "A variance filter reduces the dimensionality of data by eliminating feature pairs that have a sufficiently low variance between them. Features pairs' variance scores are calculated, and pairs with a score below a specified threshold are combined, as they do not provide enough descriptive power towards a dataset.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1804,7 +1804,7 @@ const ai_concept_map_data = {
 		{
 			"id": "missing_values",
 			"name": "Missing Values Ratio",
-			"description": "",
+			"description": "Features with many missing values don't provide much descriptive towards a dataset and may even negatively impact results. Removing features with too many missing or invalid values among the dataset will reduce dimensionality and possibly improve accuracy.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1826,7 +1826,7 @@ const ai_concept_map_data = {
 		{
 			"id": "bayesian_models",
 			"name": "Bayesian Models",
-			"description": "",
+			"description": "A Bayesian model, or a probabilistic directed acyclic graphical model, is a graphical model that represents a set of variables and their conditional dependencies using a directed acyclic graph (DAG). These models are used to represent the relationship between variables (whether they are causes, effects, or both).",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1848,7 +1848,7 @@ const ai_concept_map_data = {
 		{
 			"id": "factor_analysis",
 			"name": "Factor Analysis",
-			"description": "",
+			"description": "Factor analysis techniques describe variability in observed, correlated variables in terms of a few unobserved variables called factors. These \"latent\" variables may be affected by transformations to the observed variables in predictable ways, which allows the construction of a potentially smaller set of variables through which the dataset can be better represented. The observed variables are represented as linear combinations of these hidden, latent variables with added error terms.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1870,7 +1870,7 @@ const ai_concept_map_data = {
 		{
 			"id": "efa",
 			"name": "Exploratory Factor Analysis",
-			"description": "",
+			"description": "Exploratory factor analysis (EFA) techniques are used to identify complex relationships among observed variables by constructing a set of latent variables that can be used to construct the dataset.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1892,7 +1892,7 @@ const ai_concept_map_data = {
 		{
 			"id": "cfa",
 			"name": "Confirmatory Factor Analysis",
-			"description": "",
+			"description": "Confirmatory factor analysis (CFA) techniques are used to test whether the latent variables found during an exploratory analysis comply with hypotheses about the data.",
 			"when": {
 					"description": "",
 					"cases": []
