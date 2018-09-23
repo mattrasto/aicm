@@ -1166,7 +1166,7 @@ const ai_concept_map_data = {
 		{
 			"id": "boost_algos",
 			"name": "Boosting Algorithms",
-			"description": "",
+			"description": "Boosting algorithms are a set of algorithms used to improve or correct the output of a model by focusing on the learning aspect. Similar to how humans will focus on learning more difficult concepts by consulting different sources to find one that makes sense, boosting algorithms employ \"weak learners\" to fill holes in the learning process.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1188,7 +1188,7 @@ const ai_concept_map_data = {
 		{
 			"id": "grad_boost",
 			"name": "Gradient Boosting",
-			"description": "",
+			"description": "Gradient boosting is a technique used to optimize the loss function of a model to support weak learners in optimizing the entire classification or regression problem. We can use gradient descent to minimize or reduce the loss instead of minimize a set of parameters (such as coefficients in regression). To do this, we create \"weak learners\" that can be added to the model to correct or improve output.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1232,7 +1232,7 @@ const ai_concept_map_data = {
 		{
 			"id": "feature_bagging",
 			"name": "Feature Bagging",
-			"description": "",
+			"description": "Feature bagging, also known as the random subspace method, is an ensemble method that improves feature diversity and reduces correlation between features (which is a common cause of skewed models and overfitting) by training a model on a random subset of the data. For example, in a decision forest, trees may be trained on different subsets of the data and then combined to create a more holistic and generalizable model.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1254,7 +1254,7 @@ const ai_concept_map_data = {
 		{
 			"id": "score_norma",
 			"name": "Score Normalization",
-			"description": "",
+			"description": "Score normalization, or feature normalization, is a type of data preprocessing where each feature is reduced to a similar normalized scale, commonly [0, 1]. This allows some models to perform better by aligning the probability distributions of the features.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1276,7 +1276,7 @@ const ai_concept_map_data = {
 		{
 			"id": "static_rules",
 			"name": "Static Rules",
-			"description": "",
+			"description": "In anomaly detection, sometimes static rules can be used which work fairly well. These don't utilize any particular statistical or machine learning models, though they have be informed by some preliminary exploratory analysis. For example, in attempting to identify fraudulent bank transactions, a static rule could be \"if a transaction is 10x the past transactions' average, mark as fraudulent\".",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1298,7 +1298,7 @@ const ai_concept_map_data = {
 		{
 			"id": "fuzzy_outlier_detection",
 			"name": "Fuzzy-Logic-Based Outlier Detection",
-			"description": "",
+			"description": "When data is slightly more complex but still reaosnably calculated using basic statistical methods, sometimes basic models that utilize fuzzy logic can be used. These types of models involve calculating statistics on what the distribution of trained samples looks like and determining if a new sample doesn't \"match\" that distribution. For example, if a point has 60% of its features with values that lie outside a comfortable standard deviation, then it may be considered an anomaly.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1320,7 +1320,7 @@ const ai_concept_map_data = {
 		{
 			"id": "cluster_analysis_outlier_detection",
 			"name": "Cluster-Analysis-Based Outlier Detection",
-			"description": "",
+			"description": "Similar to fuzzy logic based models, cluster analysis based models calculate certain prior indicators that form a more robust distribution of the past data using clustering methods. In cluster based methods, typically a cluster (or multiple clusters) of normal vs. abnormal samples will be generated. Future samples will be evaluated against these clusters and labeled appropriately.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1342,7 +1342,7 @@ const ai_concept_map_data = {
 		{
 			"id": "replicator_nn",
 			"name": "Replicator NN",
-			"description": "",
+			"description": "A replicator neural network operates similarly to an autoencoder, in that it attempts to compress the representation of a dataset then reconstruct it. However, replicator neural networks compress the data into different classes that can be thought of as clusters. Because of this, replicator neural networks can be considered a type of cluster analysis-based anomaly detector.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1364,7 +1364,7 @@ const ai_concept_map_data = {
 		{
 			"id": "single_svm",
 			"name": "Single Class SVM",
-			"description": "",
+			"description": "A single class SVM is a type of SVM that learns a decision function for anomaly detection using modified SVM methods. Instead of using the SVM algorithms to classify data into two or more classes, they are used to determine whether a sample is an anomaly or not.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1386,7 +1386,7 @@ const ai_concept_map_data = {
 		{
 			"id": "subspace_correlation",
 			"name": "Subspace-Based / Correlation-Based",
-			"description": "",
+			"description": "Subspace correlation is a clustering technique used to assign data points to clusters within subspaces of the feature set. When attempting to cluster data points, irrelevant dimensions often obfuscate the clusters. Techniques in this field tend to eliminate unnecessary dimensions and cluster only on useful axes.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1408,7 +1408,7 @@ const ai_concept_map_data = {
 		{
 			"id": "density_techniques",
 			"name": "Density-Based Techniques",
-			"description": "",
+			"description": "Density based clustering techniques rely on the density of existing clusters to identify new members. In contrast to centroid-based clusters, which have no concept of density and thus assign all points to some cluster, it's possible for an outlier to be classified as such and not belong to any cluster. This allows clusters to more accurately represent their data, is the cluster's boundaries are unaffected by outliers.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1430,7 +1430,7 @@ const ai_concept_map_data = {
 		{
 			"id": "knn",
 			"name": "K-Nearest Neighbor",
-			"description": "",
+			"description": "K-Nearest Neighbor is a popular density-based clustering algorithm. When a new sample is to be classified into a cluster, it evaluates how many of its k nearest neighbors belong to each cluster in the analysis, and is classified in the one to which the most of its neighbors belong.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1452,7 +1452,7 @@ const ai_concept_map_data = {
 		{
 			"id": "local_outlier",
 			"name": "Local Outlier Factor",
-			"description": "",
+			"description": "Local Outlier Factor (LOF) is a density-based clustering algorithm that operates by measuring how \"deviant\" a point is from its neighbors. It uses measures of both local density (how dense a cluster in a particular region is) as well as the sample's distance from that cluster. In areas where a cluster is particularly dense, a data point must be relatively close in order to be classified as part of that cluster. If a cluster is sparse in a different area, that same distance from before may be short enough in this region to be considered part of that cluster.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1473,8 +1473,8 @@ const ai_concept_map_data = {
 		},
 		{
 			"id": "high_correlation",
-			"name": "High Correlation",
-			"description": "",
+			"name": "High Correlation Filter",
+			"description": "A correlation filter is used to remove \"redundant\" features, where features are highly correlated and thus carry similar information about data points. The correlation coefficient is calculated across all feature pairs, and features for which a high correlation coefficient is observed may be reduced to a single feature.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1496,7 +1496,7 @@ const ai_concept_map_data = {
 		{
 			"id": "backward_feature",
 			"name": "Backward Feature Elimination",
-			"description": "",
+			"description": "In backward feature elimination, we attempt to model the data with less features by classifying the data with a classifier at the start. We then remove one feature and attempt to re-classify, repeating this for all features. We then remove the \"least useful\" feature and repeat the process. Each time, we would ideally remove the \"least informative\" feature.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1518,7 +1518,7 @@ const ai_concept_map_data = {
 		{
 			"id": "forward_feat_selection",
 			"name": "Forward Feature Selection / Construction",
-			"description": "",
+			"description": "In forward feature construction, we attempt to model the data with less features by \"reconstructing\" the feature set one feature at a time. We start with zero features, then add the feature that adds the most information (corresponding to an increase in classifier performance) to the data.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1540,7 +1540,7 @@ const ai_concept_map_data = {
 		{
 			"id": "nmf",
 			"name": "NMF",
-			"description": "",
+			"description": "Non-negative matrix factorization is a technique by which a matrix V, which represents the dataset, is factored into two other matrices: W and H. There are several algorithms used to accomplish this with varying considerations and restrictions. The NMF method can be used to cluster the data by observing that the row of H that a data point corresponds in which the value is positive indicates which cluster it belongs to. The clusters represent the approximate partitioning that is achieved by minimizing the error function.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1562,7 +1562,7 @@ const ai_concept_map_data = {
 		{
 			"id": "pca",
 			"name": "Principal Component Analysis",
-			"description": "",
+			"description": "Principal Component Analysis, or PCA, is a method that attempts to compress the dimensionality of a dataset. While PCA causes a dataset to lose interpretability and granularity, it allows for the dataset to be modeled more effectively under certain circumstances. A principal component is a feature, and the \"first\" principal component is the feature for which all data points have the largest variance (this feature has the most \"descriptive power,\" since removing it would make points seem more similar). Further principal components can be calculated by finding the feature with the next highest variance that is uncorrelated (orthogonal) to the previous component(s). This allows for the removal of \"redundant\" features, which reduces the dimensionality of the data while maintaining the maximum representative power after the compression.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1584,7 +1584,7 @@ const ai_concept_map_data = {
 		{
 			"id": "graph_kernel_pca",
 			"name": "Graph-Based Kernel PCA",
-			"description": "",
+			"description": "A graph-based kernel PCA is a specific type of kernel PCA where, instead of using a fixed kernel, the algorithm attempts to learn the kernel using semidefinite programming.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1606,7 +1606,7 @@ const ai_concept_map_data = {
 		{
 			"id": "kernel_pca",
 			"name": "Kernel PCA",
-			"description": "",
+			"description": "Kernel PCA is a subset of PCA methods where kernel methods are used to optimize the operation. It allows for the application of PCA to nonlinear datasets.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1628,7 +1628,7 @@ const ai_concept_map_data = {
 		{
 			"id": "rand_projections",
 			"name": "Random Projections",
-			"description": "",
+			"description": "A projection of a dataset can be made to reduce its dimensionality by projecting its feature space onto a smaller one. There are techniques to compute and apply different projections, such as using a Guassian random matrix vs. a sparse random matrix.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1650,7 +1650,7 @@ const ai_concept_map_data = {
 		{
 			"id": "corr_analysis",
 			"name": "Correspondence Analysis",
-			"description": "",
+			"description": "Correspondence analysis, or reciprocal averaging, is similar to principal component analysis, except that it applies to categorical data while PCA applies to continuous data. It's a visualization technique that helps to interpret results by preparing the data for analyzing multiple properties of the data and applying them to different types of graphical representations, such as contingency tables.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1672,7 +1672,7 @@ const ai_concept_map_data = {
 		{
 			"id": "clustering",
 			"name": "Clustering",
-			"description": "",
+			"description": "Clustering is a technique used to partition data points into distinct groups, called clusters, based on some identifiable patterns in the data. There are several ways to find these patterns and form these partitions that operate effectively on differently structured datasets.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1694,7 +1694,7 @@ const ai_concept_map_data = {
 		{
 			"id": "tsne",
 			"name": "t-SNE",
-			"description": "",
+			"description": "t-distributed stochastic neighbor embedding, or t-SNE, is a visualization algorithm suitable for high-dimensional data. As we can only meaningfully interpret graphical representations of up to 3 spatial dimensions, t-SNE attempts to compress a dataset into only a few dimensions and plot this on a 2D or 3D scatter plot. It attempts to cluster points based on similarity while reducing the dimensionality, allowing the visualization to be easily interpreted.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1716,7 +1716,7 @@ const ai_concept_map_data = {
 		{
 			"id": "decision_trees_ensembles",
 			"name": "Decision Tree Ensembles",
-			"description": "",
+			"description": "Groups of decision trees (also called forests) oftentimes classify or regress data with more accuracy than a single tree (base classifier). This is due to the fact that single decision trees are prone to overfitting and accompanying outliers when they shouldn't. Be combining multiple base classifiers, we're able to \"smooth\" out these impurities and obtain a more accurate model.",
 			"when": {
 					"description": "",
 					"cases": []
