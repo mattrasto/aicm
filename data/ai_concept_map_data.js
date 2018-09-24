@@ -75,6 +75,7 @@ const ai_concept_map_data = {
 		{"source": "dimen_reduction", "target": "high_correlation", "type": "derivative"},
 		{"source": "dimen_reduction", "target": "factor_analysis", "type": "derivative"},
 		{"source": "dimen_reduction", "target": "nmf", "type": "derivative"},
+		{"source": "dimen_reduction", "target": "self_organ_maps", "type": "derivative"},
 		{"source": "pca", "target": "kernel_pca", "type": "derivative"},
 		{"source": "pca", "target": "graph_kernel_pca", "type": "derivative"},
 		{"source": "pca", "target": "blind_signal", "type": "derivative"},
@@ -94,23 +95,19 @@ const ai_concept_map_data = {
 		{"source": "clustering", "target": "subspace_clustering", "type": "derivative"},
 		{"source": "centroid_clustering", "target": "kmeans_clustering", "type": "derivative"},
 		{"source": "centroid_clustering", "target": "kmedians_clustering", "type": "derivative"},
-		{"source": "centroid_clustering", "target": "kmeans++_clustering", "type": "derivative"},
 		{"source": "centroid_clustering", "target": "fuzzy_cmeans_clustering", "type": "derivative"},
+		{"source": "kmeans_clustering", "target": "kmeans++_clustering", "type": "derivative"},
 		{"source": "distri_clustering", "target": "gauss_mixture", "type": "derivative"},
 		{"source": "density_clustering", "target": "dbscan", "type": "derivative"},
 		{"source": "density_clustering", "target": "optics", "type": "derivative"},
 		{"source": "preclustering", "target": "canopy_clustering", "type": "derivative"},
-		{"source": "corr_clustering", "target": "ccpivot", "type": "derivative"},
 		{"source": "subspace_clustering", "target": "clique", "type": "derivative"},
 		{"source": "subspace_clustering", "target": "subclu", "type": "derivative"},
 		{"source": "latent_var_models", "target": "exp_max_algo", "type": "derivative"},
 		{"source": "latent_var_models", "target": "meth_moments", "type": "derivative"},
 		{"source": "blind_signal", "target": "latent_var_models", "type": "derivative"},
-		{"source": "blind_signal", "target": "csp", "type": "derivative"},
 		{"source": "blind_signal", "target": "ssa", "type": "derivative"},
-		{"source": "blind_signal", "target": "lccad", "type": "derivative"},
-		{"source": "blind_signal", "target": "nnmf", "type": "derivative"},
-		{"source": "blind_signal", "target": "dca", "type": "derivative"},
+		{"source": "blind_signal", "target": "nmf", "type": "derivative"},
 		{"source": "blind_signal", "target": "ica", "type": "derivative"},
 		{"source": "blind_signal", "target": "svd", "type": "derivative"},
 		{"source": "semi_supervised_learning", "target": "graph_methods", "type": "derivative"},
@@ -1738,7 +1735,7 @@ const ai_concept_map_data = {
 		{
 			"id": "chisquare",
 			"name": "Chi-square / Information Gain",
-			"description": "",
+			"description": "The Chi Square test is an indicator of co-occurrence between a feature and the various classes that occur in the dependent variable. When selecting features, we want to find features with a strong relationship towards the dependent variable. The Chi Square score evaluates this relationship by measuring the occurrences of a specific feature against which class the sample is provided. This can be used to then select the features with the most co-occurrences and reduce dimensionality by eliminating those with an unfavorable Chi Square score.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1760,7 +1757,7 @@ const ai_concept_map_data = {
 		{
 			"id": "multidimen_scaling",
 			"name": "Multidimensional Scaling",
-			"description": "",
+			"description": "Multidimesional scaling, also know in its classical form as Principal Coordinates Analysis (PCoA), is a general approach towards scaling a high-dimensional dataset into a specified lower number of dimensions. Each data point is scaled from its location in the full-dataset hyperspace into a hyperspace with less dimensions, reducing dimensionality while (ideally) retaining as much information descriptivity as possible.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1914,7 +1911,7 @@ const ai_concept_map_data = {
 		{
 			"id": "latent_var_models",
 			"name": "Latent Variable Models",
-			"description": "",
+			"description": "A latent variable model is a representation of a dataset that utilizes latent variables to describe the features present in the dataset. These unobserved latent variables can be thought of as building blocks for more complex features, which may be features in the dataset. For example, if feature X and feature Y can be predicted using one latent variable with different weights, then the entire dataset can be described using a single latent variable. With high-dimensional data, it is common to observe that the full dataset can be described using only a few latent variables. These latent variables can then be used in classifiers to improve speed and sometimes even performance.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1936,7 +1933,7 @@ const ai_concept_map_data = {
 		{
 			"id": "blind_signal",
 			"name": "Blind Signal Separation",
-			"description": "",
+			"description": "Blind signal separation, also known as blind source separation, is a set of problems focused on taking a combined input of two or more sources and classifying which source each one is derived from. For example, in speech analysis, a common problem is to identify which person a specific sentence originated from. Blind signal separation is a field of models dedicated towards extracting this information.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1958,7 +1955,7 @@ const ai_concept_map_data = {
 		{
 			"id": "svd",
 			"name": "SVD",
-			"description": "",
+			"description": "Singular value decomposition is a matrix operation used to extract the singular values from a matrix. Singular values can be useful in further analysis and preprocessing, such as for dimensionality reduction. For example, the singular value decomposition provides the necessary elements of a dataset to determine what the most important features are, and how removing a specific feature will impact the descriptivity of a dataset.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1980,73 +1977,7 @@ const ai_concept_map_data = {
 		{
 			"id": "ica",
 			"name": "ICA",
-			"description": "",
-			"when": {
-					"description": "",
-					"cases": []
-			},
-			"how": {
-				"description": "",
-				"steps": []
-			},
-			"tools": {
-				"description": "",
-				"links": []
-			},
-			"links": {
-				"description": "",
-				"links": []
-			},
-			"keywords": []
-		},
-		{
-			"id": "dca",
-			"name": "DCA",
-			"description": "",
-			"when": {
-					"description": "",
-					"cases": []
-			},
-			"how": {
-				"description": "",
-				"steps": []
-			},
-			"tools": {
-				"description": "",
-				"links": []
-			},
-			"links": {
-				"description": "",
-				"links": []
-			},
-			"keywords": []
-		},
-		{
-			"id": "nnmf",
-			"name": "NNMF",
-			"description": "",
-			"when": {
-					"description": "",
-					"cases": []
-			},
-			"how": {
-				"description": "",
-				"steps": []
-			},
-			"tools": {
-				"description": "",
-				"links": []
-			},
-			"links": {
-				"description": "",
-				"links": []
-			},
-			"keywords": []
-		},
-		{
-			"id": "lccad",
-			"name": "LCCAD",
-			"description": "",
+			"description": "Independent component analysis is subset of blind signal separation. It's an approach for separating a multivariate signal into additive subcomponents. To do this, the signals are assumed to be non-Gaussian and statistically independent. From there, algorithms attempt to minimize mutual information (between the signals) and maximize the non-Gaussianity.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -2068,29 +1999,7 @@ const ai_concept_map_data = {
 		{
 			"id": "ssa",
 			"name": "SSA",
-			"description": "",
-			"when": {
-					"description": "",
-					"cases": []
-			},
-			"how": {
-				"description": "",
-				"steps": []
-			},
-			"tools": {
-				"description": "",
-				"links": []
-			},
-			"links": {
-				"description": "",
-				"links": []
-			},
-			"keywords": []
-		},
-		{
-			"id": "csp",
-			"name": "CSP",
-			"description": "",
+			"description": "Singular spectrum analysis is the process of separating a time series into a sum of additive components. These algorithms utilize singular value decomposition applies to covariance matrices.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -2112,7 +2021,7 @@ const ai_concept_map_data = {
 		{
 			"id": "meth_moments",
 			"name": "Method of Moments",
-			"description": "",
+			"description": "The method of moments is a technique used to estimate population parameters such as the mean or standard deviation. For example, the first moment is the sample mean - this can be used as a very basic estimator. The second moment is the variance. These and higher moments can be used as latent variables.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -2134,7 +2043,7 @@ const ai_concept_map_data = {
 		{
 			"id": "exp_max_algo",
 			"name": "Expectation-Maximization Algorithm",
-			"description": "",
+			"description": "The expectation-maximization (EP) algorithm is used to find parameter estimations from a statistical model that can be used to determine the distribution of latent variables. The algorithm alternates between expectation (E) steps and maximization (M) steps to find these estimates.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -2156,7 +2065,7 @@ const ai_concept_map_data = {
 		{
 			"id": "self_organ_maps",
 			"name": "Self-Organizing Maps",
-			"description": "",
+			"description": "A self-organizing map is a type of neural network used to produce a low-dimensional representation of the dataset called a map. They employ competitive learning instead of error-correction learning.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -2178,7 +2087,7 @@ const ai_concept_map_data = {
 		{
 			"id": "adapt_reson_theory",
 			"name": "Adaptive Resonance Theory",
-			"description": "",
+			"description": "Adaptive resonance theory, inspired by how the human brain processes information, is a framework to describe how artificial neural networks address problems such as pattern recognition and prediction. The idea is that the brain processes these problems using both top-down observations and bottom-up sensory information, arriving at a satisfactory result somewhere in the middle of this abstract hierarchy.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -2200,7 +2109,7 @@ const ai_concept_map_data = {
 		{
 			"id": "hierarch_clustering",
 			"name": "Hierarchical Clustering",
-			"description": "",
+			"description": "Hierarchical clustering is a clustering algorithm that initially treats all samples as either one or N (where N is the number of total data points) clusters and either merging or separating these clusters, respectively, to find the optimal representation. This allows the user to identify which clusters were formed in order, allowing a \"hierarchy\" of clusters based on their relative descriptivity to be developed and observed.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -2222,7 +2131,7 @@ const ai_concept_map_data = {
 		{
 			"id": "agglomerative",
 			"name": "Agglomerative",
-			"description": "",
+			"description": "Agglomerative clustering is a set of hierarchical clustering algorithms that operate by treating each data point as a separate cluster then combining the two most similar clusters. When the user-specified number of clusters is reached, the algorithm finishes.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -2244,7 +2153,7 @@ const ai_concept_map_data = {
 		{
 			"id": "divisive",
 			"name": "Divisive",
-			"description": "",
+			"description": "Agglomerative clustering is a set of hierarchical clustering algorithms that operate by treating the entire dataset as a single cluster then dividing the cluster until it reaches a user-specified number of clusters. When the user-specified number of clusters is reached, the algorithm finishes.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -2266,7 +2175,7 @@ const ai_concept_map_data = {
 		{
 			"id": "centroid_clustering",
 			"name": "Centroid-Based Clustering",
-			"description": "",
+			"description": "Centroid-based clustering techniques are clustering algorithms that utilize the notion of a centroid, which can be described as the center of mass of a set of data points. Throughout the application of the algorithm, the centroid of each cluster is evaluated and used to determine membership of new, unclustered data points.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -2288,7 +2197,7 @@ const ai_concept_map_data = {
 		{
 			"id": "kmeans_clustering",
 			"name": "k-means Clustering",
-			"description": "",
+			"description": "k-means clustering is a popular centroid-based clustering technique that adds new data points into clusters with the nearest mean before reevaluating the mean of that cluster.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -2310,7 +2219,7 @@ const ai_concept_map_data = {
 		{
 			"id": "kmedians_clustering",
 			"name": "k-medians Clustering",
-			"description": "",
+			"description": "k-medians clustering is a popular centroid-based clustering technique that adds new data points into clusters with the nearest median before reevaluating the median of that cluster.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -2332,7 +2241,7 @@ const ai_concept_map_data = {
 		{
 			"id": "kmeans++_clustering",
 			"name": "k-means++ Clustering",
-			"description": "",
+			"description": "The k-means++ algorithm is used to determine the initial data points to use as clusters for the k-means algorithm. Since the k-means algorithm is sensitive to its initial conditions, k-means++ attempts to optimize these initial parameters to improve the clustering performance.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -2354,7 +2263,7 @@ const ai_concept_map_data = {
 		{
 			"id": "fuzzy_cmeans_clustering",
 			"name": "Fuzzy c-means Clustering",
-			"description": "",
+			"description": "Fuzzy c-means clustering is a clustering technique in which each data point can belong to several clusters. It's similar to the k-means clustering algorithm, in that you specify a number of clusters to partition the dataset into. However, in fuzzy c-means clustering, you assign coefficients randomly to each data point, then run a centroid-based clustering algorithm and compute coefficients of membership for each cluster, essentially representing the relative likelihood of the data point belonging to each cluster.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -2376,7 +2285,7 @@ const ai_concept_map_data = {
 		{
 			"id": "distri_clustering",
 			"name": "Distribution-Based Clustering",
-			"description": "",
+			"description": "Distribution based clustering models defines clusters as groups of data points most likely belonging to the same distribution. Then, random data points can be sampled and assigned to the cluster with the most relevant distribution.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -2398,7 +2307,7 @@ const ai_concept_map_data = {
 		{
 			"id": "gauss_mixture",
 			"name": "Gaussian Mixture Models",
-			"description": "",
+			"description": "Generally, mixture models are probabilistic models used to represent the presence of subpopulations within a population. A Gaussian mixture model assumes this population follows a Gaussian, or normal, distribution. A Gaussian mixture model, then, attempts to infer the properties of the subpopulations (clusters) given only observations on the pooled population with the assumption that the population observes a Gaussian distribution.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -2420,7 +2329,7 @@ const ai_concept_map_data = {
 		{
 			"id": "density_clustering",
 			"name": "Density-Based Clustering",
-			"description": "",
+			"description": "Density-based clustering techniques are clustering algorithms that utilize the density of subpopulations, or clusters, to evaluate membership of a newly observed datapoint. Throughout the application of the algorithm, the density of either the entire cluster or a local region within that cluster will be evaluated and compared against the distance of the new data point with the relevant cluster or subcluster to determine membership.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -2442,7 +2351,7 @@ const ai_concept_map_data = {
 		{
 			"id": "dbscan",
 			"name": "DBSCAN",
-			"description": "",
+			"description": "Density-based spatial clustering of applications with noise (DBSCAN) is a popular density-based clustering algorithm that groups together points that are densely packed together and marks outliers in sparse regions.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -2464,7 +2373,7 @@ const ai_concept_map_data = {
 		{
 			"id": "optics",
 			"name": "OPTICS",
-			"description": "",
+			"description": "Ordering points to identify the clustering structure (OPTICS) is a density-based clustering algorithm similar to DBSCAN. It contrasts with DBSCAN in that it's able to handle a dataset with regions of varying density, as variable density may simply be a data collection or sampling issue instead of representing an inherent density variability in the data.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -2486,7 +2395,7 @@ const ai_concept_map_data = {
 		{
 			"id": "preclustering",
 			"name": "Pre-Clustering",
-			"description": "",
+			"description": "Pre-clustering techniques are algorithms that preprocess or prepare a dataset to optimize the clustering algorithms applied on it.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -2508,7 +2417,7 @@ const ai_concept_map_data = {
 		{
 			"id": "canopy_clustering",
 			"name": "Canopy Clustering",
-			"description": "",
+			"description": "The canopy clustering algorithm is a pre-clustering algorithm used commonly to prepare a dataset for the k-means or hierarchical clustering methods. It improves the speed of the clustering algorithms on large datasets.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -2530,29 +2439,7 @@ const ai_concept_map_data = {
 		{
 			"id": "corr_clustering",
 			"name": "Correlation Clustering",
-			"description": "",
-			"when": {
-					"description": "",
-					"cases": []
-			},
-			"how": {
-				"description": "",
-				"steps": []
-			},
-			"tools": {
-				"description": "",
-				"links": []
-			},
-			"links": {
-				"description": "",
-				"links": []
-			},
-			"keywords": []
-		},
-		{
-			"id": "ccpivot",
-			"name": "CC-Pivot",
-			"description": "",
+			"description": "Correlation clustering methods are a set of clustering methods that operate on a dataset where the relationships between data points are known beforehand. These techniques optimize to maximize cluster similarity or minimize cluster dissimilarity.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -2574,7 +2461,7 @@ const ai_concept_map_data = {
 		{
 			"id": "subspace_clustering",
 			"name": "Subspace Clustering",
-			"description": "",
+			"description": "Subspace clustering techniques reduce the data into a smaller subspace in order to find more effective and computationally feasible clusters. High-dimensional data may lose granularity when projected onto low-dimensional spaces, but clusters are sometimes better identified and calculated on these less descriptive subspaces.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -2596,7 +2483,7 @@ const ai_concept_map_data = {
 		{
 			"id": "clique",
 			"name": "CLIQUE",
-			"description": "",
+			"description": "Clustering in Quest (CLIQUE) is a density-based subspace clustering algorithm that discretizes the data space through a grid and estimates the density of each cluster by counting the number of points in each grid cell.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -2618,7 +2505,7 @@ const ai_concept_map_data = {
 		{
 			"id": "subclu",
 			"name": "SUBCLU",
-			"description": "",
+			"description": "SUBCLU is a density-based subspace clustering algorithm that improves on the work of DBSCAN by allowing the identification of clusters in axis-parallel subspaces using a bottom-up, greedy strategy to remain efficient.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -2640,7 +2527,7 @@ const ai_concept_map_data = {
 		{
 			"id": "graph_methods",
 			"name": "Graph-Based Methods",
-			"description": "",
+			"description": "Graph-based clustering methods utilize information gained from a dataset using graph theory concepts, such as cliques, clusters, subnetworks, centrality, outliers, etc. to efficiently cluster datasets.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -2662,7 +2549,7 @@ const ai_concept_map_data = {
 		{
 			"id": "generative_models",
 			"name": "Generative Models",
-			"description": "",
+			"description": "A generative model in machine learning is a model tasked with reconstructing the dataset to a level of accuracy by which its able to generate entirely new data points with the same variations as the original dataset. Generative models are often combined with discriminative models to form a \"competitive\" model that attempts to learn how to properly classify and generate data points from the original data set at the same time.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -2684,7 +2571,7 @@ const ai_concept_map_data = {
 		{
 			"id": "low_density_separation",
 			"name": "Low-Density Separation",
-			"description": "",
+			"description": "Low-density separation is a technique that applies a SVM to better separate data by forcing the SVM to create its decision boundary in regions of low density, as determined by clustering methods. This allows for an effective decision boundary to be found in high-dimensional data while remaining computationally feasible.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -2706,7 +2593,7 @@ const ai_concept_map_data = {
 		{
 			"id": "transductive_svm",
 			"name": "Transductive SVM",
-			"description": "",
+			"description": "A transductive SVM is a modified type of SVM that is able to handle and classify unlabeled data.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -2728,7 +2615,7 @@ const ai_concept_map_data = {
 		{
 			"id": "evo_strategies",
 			"name": "Evolution Strategies",
-			"description": "",
+			"description": "Evolution strategies are optimization techniques based on the concepts from natural evolution. Common in reinforcement learning, these techniques allow algorithms to develop over time to adapt either the model or classifier to the data.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -2750,7 +2637,7 @@ const ai_concept_map_data = {
 		{
 			"id": "markov_decision_processes",
 			"name": "Markov Decision Processes",
-			"description": "",
+			"description": "A Markov decision process is a discrete time stochastic control process. In a situation where outcomes are partly random and partly the effect of some decision maker, they provide a mathematical framework for modeling decision making. They can aid in studying optimization problems and are an important concept in reinforcement learning.",
 			"when": {
 					"description": "",
 					"cases": []
