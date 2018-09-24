@@ -9,7 +9,7 @@ const ai_concept_map_data = {
 		{"source": "machine_learning", "target": "semi_supervised_learning", "type": "derivative"},
 		{"source": "supervised_learning", "target": "svm", "type": "derivative"},
 		{"source": "supervised_learning", "target": "neural_nets", "type": "derivative"},
-		{"source": "supervised_learning", "target": "markov_chains", "type": "derivative"},
+		{"source": "supervised_learning", "target": "markov_model", "type": "derivative"},
 		{"source": "supervised_learning", "target": "regressions", "type": "derivative"},
 		{"source": "supervised_learning", "target": "naive_bayes", "type": "derivative"},
 		{"source": "svm", "target": "nonlinear_svm", "type": "derivative"},
@@ -24,8 +24,8 @@ const ai_concept_map_data = {
 		{"source": "neural_nets", "target": "self_organ_maps", "type": "derivative"},
 		{"source": "neural_nets", "target": "adapt_reson_theory", "type": "derivative"},
 		{"source": "neural_nets", "target": "replicator_nn", "type": "derivative"},
-		{"source": "markov_chains", "target": "markov_model", "type": "derivative"},
-		{"source": "markov_chains", "target": "hidden_markov_model", "type": "derivative"},
+		{"source": "markov_model", "target": "markov_chains", "type": "derivative"},
+		{"source": "markov_model", "target": "hidden_markov_model", "type": "derivative"},
 		{"source": "regressions", "target": "log_regression", "type": "derivative"},
 		{"source": "regressions", "target": "linear_regressions", "type": "derivative"},
 		{"source": "linear_regressions", "target": "multi_linear_regression", "type": "derivative"},
@@ -56,7 +56,7 @@ const ai_concept_map_data = {
 		{"source": "ensemble_methods", "target": "rotation_forest", "type": "derivative"},
 		{"source": "ensemble_methods", "target": "boot_aggregated", "type": "derivative"},
 		{"source": "density_techniques", "target": "local_outlier", "type": "derivative"},
-		{"source": "density_techniques", "target": "knn", "type": "related"},
+		{"source": "density_techniques", "target": "knn", "type": "derivative"},
 		{"source": "dimen_reduction", "target": "bayesian_models", "type": "derivative"},
 		{"source": "dimen_reduction", "target": "missing_values", "type": "derivative"},
 		{"source": "dimen_reduction", "target": "low_var_filter", "type": "derivative"},
@@ -75,6 +75,7 @@ const ai_concept_map_data = {
 		{"source": "dimen_reduction", "target": "high_correlation", "type": "derivative"},
 		{"source": "dimen_reduction", "target": "factor_analysis", "type": "derivative"},
 		{"source": "dimen_reduction", "target": "nmf", "type": "derivative"},
+		{"source": "dimen_reduction", "target": "self_organ_maps", "type": "derivative"},
 		{"source": "pca", "target": "kernel_pca", "type": "derivative"},
 		{"source": "pca", "target": "graph_kernel_pca", "type": "derivative"},
 		{"source": "pca", "target": "blind_signal", "type": "derivative"},
@@ -94,23 +95,19 @@ const ai_concept_map_data = {
 		{"source": "clustering", "target": "subspace_clustering", "type": "derivative"},
 		{"source": "centroid_clustering", "target": "kmeans_clustering", "type": "derivative"},
 		{"source": "centroid_clustering", "target": "kmedians_clustering", "type": "derivative"},
-		{"source": "centroid_clustering", "target": "kmeans++_clustering", "type": "derivative"},
 		{"source": "centroid_clustering", "target": "fuzzy_cmeans_clustering", "type": "derivative"},
+		{"source": "kmeans_clustering", "target": "kmeans++_clustering", "type": "derivative"},
 		{"source": "distri_clustering", "target": "gauss_mixture", "type": "derivative"},
 		{"source": "density_clustering", "target": "dbscan", "type": "derivative"},
 		{"source": "density_clustering", "target": "optics", "type": "derivative"},
 		{"source": "preclustering", "target": "canopy_clustering", "type": "derivative"},
-		{"source": "corr_clustering", "target": "ccpivot", "type": "derivative"},
 		{"source": "subspace_clustering", "target": "clique", "type": "derivative"},
 		{"source": "subspace_clustering", "target": "subclu", "type": "derivative"},
 		{"source": "latent_var_models", "target": "exp_max_algo", "type": "derivative"},
 		{"source": "latent_var_models", "target": "meth_moments", "type": "derivative"},
 		{"source": "blind_signal", "target": "latent_var_models", "type": "derivative"},
-		{"source": "blind_signal", "target": "csp", "type": "derivative"},
 		{"source": "blind_signal", "target": "ssa", "type": "derivative"},
-		{"source": "blind_signal", "target": "lccad", "type": "derivative"},
-		{"source": "blind_signal", "target": "nnmf", "type": "derivative"},
-		{"source": "blind_signal", "target": "dca", "type": "derivative"},
+		{"source": "blind_signal", "target": "nmf", "type": "derivative"},
 		{"source": "blind_signal", "target": "ica", "type": "derivative"},
 		{"source": "blind_signal", "target": "svd", "type": "derivative"},
 		{"source": "semi_supervised_learning", "target": "graph_methods", "type": "derivative"},
@@ -119,8 +116,8 @@ const ai_concept_map_data = {
 		{"source": "semi_supervised_learning", "target": "gan", "type": "derivative"},
 		{"source": "low_density_separation", "target": "transductive_svm", "type": "derivative"},
 		{"source": "reinforcement_learning", "target": "evo_strategies", "type": "derivative"},
-		{"source": "reinforcement_learning", "target": "markov_chains", "type": "derivative"},
-		{"source": "markov_chains", "target": "markov_decision_processes", "type": "derivative"},
+		{"source": "reinforcement_learning", "target": "markov_model", "type": "derivative"},
+		{"source": "markov_model", "target": "markov_decision_processes", "type": "derivative"},
 		{"source": "rec_neural_nets", "target": "clock_rnn", "type": "derivative"},
 		{"source": "rec_neural_nets", "target": "gru", "type": "derivative"},
 		{"source": "rec_neural_nets", "target": "neural_programmer", "type": "derivative"},
@@ -418,7 +415,7 @@ const ai_concept_map_data = {
 		{
 			"id": "act_rnn",
 			"name": "Adaptive Computation Time RNN",
-			"description": "",
+			"description": "The ACT algorithm is a modification on traditional RNN architectures that allows the model to view each sample multiple times. This allows the neural net to learn how many times it needs to view each example to predict it correctly - instead of requiring a large amount of the same symbols over and over, ACT optimizes this by intelligently choosing which examples to review. When we study for exams, we don't repeat flashcards or problems we can solve with ease; similarly, ACT only repeats ones that it sruggles with identifying until the probability of correct classification is high enough.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -440,7 +437,7 @@ const ai_concept_map_data = {
 		{
 			"id": "neural_programmer",
 			"name": "Neural Programmer",
-			"description": "",
+			"description": "A Neural Programmer is a neural network with some added built-in functionality, namely arithmetic and logic. Humans learn arithmetic and logic quickly, but neural networks don't have this innate ability. The Neural Programer determines when to use these operations by inferring them from the training samples, and can chain together these operations to achieve a high accuracy for some problems.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -528,7 +525,7 @@ const ai_concept_map_data = {
 		{
 			"id": "stacked_autoencoders",
 			"name": "Stacked Autoencoders",
-			"description": "",
+			"description": "Some neural network architectures may benefit by using autoencoders in middle layers to reduce the 'representation' of the data into a compressed form. Stacked autoencoders are just this: neural networks with sparse autoencoder layers embedded as a hidden layer.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -550,7 +547,7 @@ const ai_concept_map_data = {
 		{
 			"id": "svm",
 			"name": "Support Vector Machines",
-			"description": "",
+			"description": "SVMs are classifiers that distinguish between groups using a 'maximum-margin hyperplane,' which you can think of as a line separating examples from a dataset that is as wide as possible. By finding the widest line separating examples between the two classes, we assume this division is the best classification. SVMs are typically used as binary classifiers, though there are modified algorithms that can be used for multi-class classification. While typically SVMs are used for linear classification, you can map their inputs into high-dimensional feature spaces and then using a linear classifier in this high-dimensional feature space. This is called the 'kernel trick.'",
 			"when": {
 					"description": "",
 					"cases": []
@@ -572,7 +569,7 @@ const ai_concept_map_data = {
 		{
 			"id": "nonlinear_svm",
 			"name": "Non-Linear SVM",
-			"description": "",
+			"description": "A non-linear SVM is simply an SVM that uses the kernel trick to classify datasets that aren't linearly separable. If you wish to use an SVM on a dataset best fit using, say, a quadratic function, then you'll need to use a proper kernel function (also known as a 'Mercer kernel') to map the data to a high-dimensional feature space in which you can linearly separate the data. Note that there are a limited number of kernel functions which can be used, as they must satisfy a few conditions in order to be viable. Most machine learning libraries support non-linear SVMs and provide these kernel functions for use.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -594,7 +591,7 @@ const ai_concept_map_data = {
 		{
 			"id": "linear_svm",
 			"name": "Linear SVM",
-			"description": "",
+			"description": "A linear SVM is a traditional SVM that is able to classify datasets that are linearly separable. The SVM operates by finding two parallel planes (in 2D, these are lines) that successfully separate the data and calculating the distance between these two planes. The distance is called the margin, as it represents the margin between the two datasets. The SVM then attempts to find the two planes which result in the largest margin, indicating the largest distance between the datasets given any two planes.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -616,7 +613,7 @@ const ai_concept_map_data = {
 		{
 			"id": "naive_bayes",
 			"name": "Naive Bayes",
-			"description": "",
+			"description": "Naive Bayes is a classifier based on statistics calculated on the existing dataset. It's friendly to high-dimensional data, and can be applied to both numeric and non-numeric data (though the latter is more common). Depending on the type of classifier used (there are typically three types: Gaussian, Bernoulli, and Multinomial), the exact statistics and formulas are used. In a Gaussian Naive Bayes classifier, the probabilities for a new sample are provided in terms of 'probability that new sample is class X' and 'ratio of all samples that are class X to all samples.' From this, we multiply both probabilities to find the 'prior probability' for each class, which is used to classify the new sample. Because samples are classified based on a combination of past classification ratios and an analysis of 'samples like it,' it is well-suited for realtime classification.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -638,7 +635,7 @@ const ai_concept_map_data = {
 		{
 			"id": "regressions",
 			"name": "Regressions",
-			"description": "",
+			"description": "A regression is a measure of the relationship between a dependent variable (in machine learning, this is the class or Y) and one or more independent variables (the features). There are multiple ways to perform regression, but the goal is always to find some mathematical representation of this relationship. You can think of it as an 'approximation line' that could be straight, curved, or all manners of misshapen as long as it is mathematically representable.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -660,7 +657,7 @@ const ai_concept_map_data = {
 		{
 			"id": "log_regression",
 			"name": "Logistic Regression",
-			"description": "",
+			"description": "A logistic regression is a type of regression that maps the input data to a certain class, typically 0 or 1. It uses the logit function, which outputs a number within [0, 1] that can be interpreted as the probability of that prediction being correct. You can use logistic regression with two classes, called binary logistic regression, three or more categories without ordering, called multinomial logistic regression, or three or more classes with ordering, called ordinal logistic regression.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -682,7 +679,7 @@ const ai_concept_map_data = {
 		{
 			"id": "multi_linear_regression",
 			"name": "Multiple Linear Regression",
-			"description": "",
+			"description": "A multiple linear regression is a type of linear regression with multiple features. That's it - if you have more than one feature, then a linear regression is called a multiple linear regression. It can be used for prediction, but also for determining which features are most important. If your dataset is properly scaled to the number of features you have (typically recommended to be at least 10-20 times larger) then you can inspect the weights on each feature after training to answer the question 'what is the best predictor of Y?'",
 			"when": {
 					"description": "",
 					"cases": []
@@ -704,7 +701,7 @@ const ai_concept_map_data = {
 		{
 			"id": "linear_regressions",
 			"name": "Linear Regressions",
-			"description": "",
+			"description": "A linear regression is a type of regression that maps the input data to a number. Linear regression is among the most widely used statistical techniques, as it's extremely simple but works in many scenarios. For example, in predicting the price of vegatables sold by the pound at your nearest market, a linear regression performs perfectly: there is one feature, vegetable weight, that has a linear (straight line) correlation with the price you'll pay.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -726,7 +723,7 @@ const ai_concept_map_data = {
 		{
 			"id": "simple_linear_regression",
 			"name": "Simple Linear Regression",
-			"description": "",
+			"description": "A simple linear regression is a type of linear regression where there are only two variables: the independent variable (X) and the dependent variable (Y). It can be visualized as a 2D scatter plot where you attempt to fit the data by drawing a straight line through it.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -748,7 +745,7 @@ const ai_concept_map_data = {
 		{
 			"id": "curvilinear_regression",
 			"name": "Curvilinear Regression",
-			"description": "",
+			"description": "A curvilinear regression is a type of regression that produces a curved line to fit the data. There are multiple equations for curved lines, such as exponential, power, logarithmic, trigonometric, and more. You can use similar, though slightly modified, equations to vanilla linear regression to fit these curved lines to the dataset.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -770,7 +767,7 @@ const ai_concept_map_data = {
 		{
 			"id": "poly_regression",
 			"name": "Polynomial Regression",
-			"description": "",
+			"description": "Polynomial regression is a popular type of curivilinear regression. Polynomial regression is similar to multilinear regression except that instead of each weight being linear, they can also be exponential. In the case where only one independent variable is used, you simply add more weight terms increasing in power until you achieve satisfactory accuracy or give up. While you could theoretically form any curve from a polynomial regression, it's rare to find high-exponent weights, particularly for datasets with high dimensionality, since it becomes much more computationally expensive with every added feature or exponent.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -792,7 +789,7 @@ const ai_concept_map_data = {
 		{
 			"id": "markov_chains",
 			"name": "Markov Chains",
-			"description": "",
+			"description": "Markov chains are a process which can be though of as a chain of states. Each state has a few arrows going to other states, each one with a probability that indicates how likely it is for that arrow to be crossed (that is, how likely it is for the process to move from the first state to the next one along that arrow). Markov chains, and in fact any Markov process, follow the Markov property, which states that the next state a process will enter *only* depends on the current state. While Markov chains themselves aren't particularly useful for machine learning, the Markov property is fundamental to some concepts within the space. Additionally, Markov chains are useful for modeling random processes and serve as an excellent tool for introductory modeling.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -814,7 +811,7 @@ const ai_concept_map_data = {
 		{
 			"id": "markov_model",
 			"name": "Markov Model",
-			"description": "",
+			"description": "Markov models are stochastic models used to model randomly changing systems. Any system modeled by a Markov model follows the Markov property, which states that the next state a process will enter *only* depends on the current state. Markov models are used in some machine learning models where it's important to assume that only the current state is important in predicting the next state.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -836,7 +833,7 @@ const ai_concept_map_data = {
 		{
 			"id": "hidden_markov_model",
 			"name": "Hidden Markov Model",
-			"description": "",
+			"description": "Hidden markov models are Markov chains in which the state is partially observable and thus can only be imprecisely determined. This is useful for some models, such as in speech signal classification where signals (voice data) are complex but can be decoded in a Markov chain by determining the most likely 'path' through the model in terms of a sequence of words.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -858,7 +855,7 @@ const ai_concept_map_data = {
 		{
 			"id": "unsupervised_learning",
 			"name": "Unsupervised Learning",
-			"description": "",
+			"description": "Unsupervised learning is a field in machine learning where the data has no labels - only independent variables. Given a dataset with only descriptive variables, unsupervised models attempt infer patterns on this dataset - that is, infer the dependent variables with no prior examples of labels. A common task is clustering, which is used to partition the data into reasonable groups or classes.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -880,7 +877,7 @@ const ai_concept_map_data = {
 		{
 			"id": "semi_supervised_learning",
 			"name": "Semi-Supervised Learning",
-			"description": "",
+			"description": "Semi-supervised learning is a field that utilizes models capable of combining both labeled and unlabeled data. Typically, these models are supervised models that perform well with unlabeled data. However, there are also some models that fall into neither supervised nor unsupervised learning that may be described as semi-supervised, such as generative adversarial models.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -902,7 +899,7 @@ const ai_concept_map_data = {
 		{
 			"id": "reinforcement_learning",
 			"name": "Reinforcement Learning",
-			"description": "",
+			"description": "Reinforcement learning is a field with an entirely different problem statement than supervised and unsupervised methods. In reinforcement learning, you have agents, actions, an environment, and a reward function. Agents live in an environment (state space) that can perform a certain set of actions and must use these actions to progress to a state in their environment that maximizes their cumulative reward. For example, in video games you have a character (agent), some controls (actions), a level or playing field (environment), and a reward function (points, gold, or a goal: win).",
 			"when": {
 					"description": "",
 					"cases": []
@@ -924,7 +921,7 @@ const ai_concept_map_data = {
 		{
 			"id": "anomaly_detection",
 			"name": "Anomaly Detection",
-			"description": "",
+			"description": "Anomaly detection is the field focused on detecting outliers in a dataset. When data has a certain pattern to it, such as bank users making payments on a regular basis, outliers can be detected by identifying abnormal behavior in the dataset.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -968,7 +965,7 @@ const ai_concept_map_data = {
 		{
 			"id": "structured_prediction",
 			"name": "Structured Prediction",
-			"description": "",
+			"description": "Structured prediction, or structured prediction, is a general term for classification or regression with an interpretable structure or framework. One of the complaints of machine learning, specifically with neural networks, is that we 'don't know what they're doing.' Structured learning is accomplished by using models that tell us what they're doing, such as decision trees. If a classification can be made by saying 'if this variable is less than 10, this sample is this class, otherwise it's the other class,' then structured prediction may not only be viable, but more helpful for researchers to use and understand.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1034,7 +1031,7 @@ const ai_concept_map_data = {
 		{
 			"id": "regression_trees",
 			"name": "Regression Trees",
-			"description": "",
+			"description": "Regression trees are decision trees that can take and operate on continuous dependent variables. In cases where the output of the decision tree should be a continuous variable instead of a class, you'll want to use regression trees.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1056,7 +1053,7 @@ const ai_concept_map_data = {
 		{
 			"id": "ensemble_methods",
 			"name": "Ensemble Methods",
-			"description": "",
+			"description": "Ensemble methods are techniques that generate multiple independent models and combine them after they are individually trained to improve performance. Ensembles are especially useful for models prone to overfitting or focusing on outliers, as it aggregates the models. This reduces reliance on any particular pattern unless it's relevant across a large subset of the individual models, which is likely what we'd hope to occur.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1078,7 +1075,7 @@ const ai_concept_map_data = {
 		{
 			"id": "boosted_trees",
 			"name": "Boosted Trees",
-			"description": "",
+			"description": "Gradient boosted trees are decision trees or decision forests to which gradient boosting is applied. Gradient boosting can be thought of as an optimization of the cost function such that gradients are more likely to point in the negative direction. When applied to individual decision trees, the quality of fit of each model is improved. This causes boosted trees to perform similar to decision forests, in that abnormalities are smoothed out; with decision forests, this is done through aggregation, while for boosted trees this is done on the individual model.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1100,7 +1097,7 @@ const ai_concept_map_data = {
 		{
 			"id": "rotation_forest",
 			"name": "Rotation Forest",
-			"description": "",
+			"description": "Rotation forests are a special type of decision forest intended to better represent feature diversity. Before training, the data is separated into subsets and Principal Component Analysis (PCA) is applied to each subset. The principal components are then used to train a tree with the entire dataset. Once all decision trees have been trained with the whole dataset (using only their respective principal components), they are aggregated.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1122,7 +1119,7 @@ const ai_concept_map_data = {
 		{
 			"id": "boot_aggregated",
 			"name": "Bootstrap Aggregated",
-			"description": "",
+			"description": "Bootstrap Aggregating, or bagging, is another type of aggregation method commonly appled to decision trees (though it can also be applied to any method). Instead of training multiple decision trees with the entire dataset, as with vanilla decision forests, only a subset of the data is used to train each base classifier (tree). They are then combined to form a forest. The goal of bagging is to better represent feature diversity by randomly sampling the dataset.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1144,7 +1141,7 @@ const ai_concept_map_data = {
 		{
 			"id": "rand_forest",
 			"name": "Random Forest",
-			"description": "",
+			"description": "A random forest is an aggregation method by which decision trees are combined into a single classifier. A single decision tree may be prone to overfitting or being weighted towards certain data abnormalities, but a random forest mitigates these issues by combining multiple classifiers in the hope that the ensemble will better represent the data's true nature and \"smooth\" out the abnormalities.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1166,7 +1163,7 @@ const ai_concept_map_data = {
 		{
 			"id": "boost_algos",
 			"name": "Boosting Algorithms",
-			"description": "",
+			"description": "Boosting algorithms are a set of algorithms used to improve or correct the output of a model by focusing on the learning aspect. Similar to how humans will focus on learning more difficult concepts by consulting different sources to find one that makes sense, boosting algorithms employ \"weak learners\" to fill holes in the learning process.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1188,7 +1185,7 @@ const ai_concept_map_data = {
 		{
 			"id": "grad_boost",
 			"name": "Gradient Boosting",
-			"description": "",
+			"description": "Gradient boosting is a technique used to optimize the loss function of a model to support weak learners in optimizing the entire classification or regression problem. We can use gradient descent to minimize or reduce the loss instead of minimize a set of parameters (such as coefficients in regression). To do this, we create \"weak learners\" that can be added to the model to correct or improve output.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1232,7 +1229,7 @@ const ai_concept_map_data = {
 		{
 			"id": "feature_bagging",
 			"name": "Feature Bagging",
-			"description": "",
+			"description": "Feature bagging, also known as the random subspace method, is an ensemble method that improves feature diversity and reduces correlation between features (which is a common cause of skewed models and overfitting) by training a model on a random subset of the data. For example, in a decision forest, trees may be trained on different subsets of the data and then combined to create a more holistic and generalizable model.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1254,7 +1251,7 @@ const ai_concept_map_data = {
 		{
 			"id": "score_norma",
 			"name": "Score Normalization",
-			"description": "",
+			"description": "Score normalization, or feature normalization, is a type of data preprocessing where each feature is reduced to a similar normalized scale, commonly [0, 1]. This allows some models to perform better by aligning the probability distributions of the features.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1276,7 +1273,7 @@ const ai_concept_map_data = {
 		{
 			"id": "static_rules",
 			"name": "Static Rules",
-			"description": "",
+			"description": "In anomaly detection, sometimes static rules can be used which work fairly well. These don't utilize any particular statistical or machine learning models, though they have be informed by some preliminary exploratory analysis. For example, in attempting to identify fraudulent bank transactions, a static rule could be \"if a transaction is 10x the past transactions' average, mark as fraudulent\".",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1298,7 +1295,7 @@ const ai_concept_map_data = {
 		{
 			"id": "fuzzy_outlier_detection",
 			"name": "Fuzzy-Logic-Based Outlier Detection",
-			"description": "",
+			"description": "When data is slightly more complex but still reaosnably calculated using basic statistical methods, sometimes basic models that utilize fuzzy logic can be used. These types of models involve calculating statistics on what the distribution of trained samples looks like and determining if a new sample doesn't \"match\" that distribution. For example, if a point has 60% of its features with values that lie outside a comfortable standard deviation, then it may be considered an anomaly.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1320,7 +1317,7 @@ const ai_concept_map_data = {
 		{
 			"id": "cluster_analysis_outlier_detection",
 			"name": "Cluster-Analysis-Based Outlier Detection",
-			"description": "",
+			"description": "Similar to fuzzy logic based models, cluster analysis based models calculate certain prior indicators that form a more robust distribution of the past data using clustering methods. In cluster based methods, typically a cluster (or multiple clusters) of normal vs. abnormal samples will be generated. Future samples will be evaluated against these clusters and labeled appropriately.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1342,7 +1339,7 @@ const ai_concept_map_data = {
 		{
 			"id": "replicator_nn",
 			"name": "Replicator NN",
-			"description": "",
+			"description": "A replicator neural network operates similarly to an autoencoder, in that it attempts to compress the representation of a dataset then reconstruct it. However, replicator neural networks compress the data into different classes that can be thought of as clusters. Because of this, replicator neural networks can be considered a type of cluster analysis-based anomaly detector.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1364,7 +1361,7 @@ const ai_concept_map_data = {
 		{
 			"id": "single_svm",
 			"name": "Single Class SVM",
-			"description": "",
+			"description": "A single class SVM is a type of SVM that learns a decision function for anomaly detection using modified SVM methods. Instead of using the SVM algorithms to classify data into two or more classes, they are used to determine whether a sample is an anomaly or not.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1386,7 +1383,7 @@ const ai_concept_map_data = {
 		{
 			"id": "subspace_correlation",
 			"name": "Subspace-Based / Correlation-Based",
-			"description": "",
+			"description": "Subspace correlation is a clustering technique used to assign data points to clusters within subspaces of the feature set. When attempting to cluster data points, irrelevant dimensions often obfuscate the clusters. Techniques in this field tend to eliminate unnecessary dimensions and cluster only on useful axes.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1408,7 +1405,7 @@ const ai_concept_map_data = {
 		{
 			"id": "density_techniques",
 			"name": "Density-Based Techniques",
-			"description": "",
+			"description": "Density based clustering techniques rely on the density of existing clusters to identify new members. In contrast to centroid-based clusters, which have no concept of density and thus assign all points to some cluster, it's possible for an outlier to be classified as such and not belong to any cluster. This allows clusters to more accurately represent their data, is the cluster's boundaries are unaffected by outliers.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1430,7 +1427,7 @@ const ai_concept_map_data = {
 		{
 			"id": "knn",
 			"name": "K-Nearest Neighbor",
-			"description": "",
+			"description": "K-Nearest Neighbor is a popular density-based clustering algorithm. When a new sample is to be classified into a cluster, it evaluates how many of its k nearest neighbors belong to each cluster in the analysis, and is classified in the one to which the most of its neighbors belong.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1452,7 +1449,7 @@ const ai_concept_map_data = {
 		{
 			"id": "local_outlier",
 			"name": "Local Outlier Factor",
-			"description": "",
+			"description": "Local Outlier Factor (LOF) is a density-based clustering algorithm that operates by measuring how \"deviant\" a point is from its neighbors. It uses measures of both local density (how dense a cluster in a particular region is) as well as the sample's distance from that cluster. In areas where a cluster is particularly dense, a data point must be relatively close in order to be classified as part of that cluster. If a cluster is sparse in a different area, that same distance from before may be short enough in this region to be considered part of that cluster.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1473,8 +1470,8 @@ const ai_concept_map_data = {
 		},
 		{
 			"id": "high_correlation",
-			"name": "High Correlation",
-			"description": "",
+			"name": "High Correlation Filter",
+			"description": "A correlation filter is used to remove \"redundant\" features, where features are highly correlated and thus carry similar information about data points. The correlation coefficient is calculated across all feature pairs, and features for which a high correlation coefficient is observed may be reduced to a single feature.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1496,7 +1493,7 @@ const ai_concept_map_data = {
 		{
 			"id": "backward_feature",
 			"name": "Backward Feature Elimination",
-			"description": "",
+			"description": "In backward feature elimination, we attempt to model the data with less features by classifying the data with a classifier at the start. We then remove one feature and attempt to re-classify, repeating this for all features. We then remove the \"least useful\" feature and repeat the process. Each time, we would ideally remove the \"least informative\" feature.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1518,7 +1515,7 @@ const ai_concept_map_data = {
 		{
 			"id": "forward_feat_selection",
 			"name": "Forward Feature Selection / Construction",
-			"description": "",
+			"description": "In forward feature construction, we attempt to model the data with less features by \"reconstructing\" the feature set one feature at a time. We start with zero features, then add the feature that adds the most information (corresponding to an increase in classifier performance) to the data.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1540,7 +1537,7 @@ const ai_concept_map_data = {
 		{
 			"id": "nmf",
 			"name": "NMF",
-			"description": "",
+			"description": "Non-negative matrix factorization is a technique by which a matrix V, which represents the dataset, is factored into two other matrices: W and H. There are several algorithms used to accomplish this with varying considerations and restrictions. The NMF method can be used to cluster the data by observing that the row of H that a data point corresponds in which the value is positive indicates which cluster it belongs to. The clusters represent the approximate partitioning that is achieved by minimizing the error function.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1562,7 +1559,7 @@ const ai_concept_map_data = {
 		{
 			"id": "pca",
 			"name": "Principal Component Analysis",
-			"description": "",
+			"description": "Principal Component Analysis, or PCA, is a method that attempts to compress the dimensionality of a dataset. While PCA causes a dataset to lose interpretability and granularity, it allows for the dataset to be modeled more effectively under certain circumstances. A principal component is a feature, and the \"first\" principal component is the feature for which all data points have the largest variance (this feature has the most \"descriptive power,\" since removing it would make points seem more similar). Further principal components can be calculated by finding the feature with the next highest variance that is uncorrelated (orthogonal) to the previous component(s). This allows for the removal of \"redundant\" features, which reduces the dimensionality of the data while maintaining the maximum representative power after the compression.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1584,7 +1581,7 @@ const ai_concept_map_data = {
 		{
 			"id": "graph_kernel_pca",
 			"name": "Graph-Based Kernel PCA",
-			"description": "",
+			"description": "A graph-based kernel PCA is a specific type of kernel PCA where, instead of using a fixed kernel, the algorithm attempts to learn the kernel using semidefinite programming.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1606,7 +1603,7 @@ const ai_concept_map_data = {
 		{
 			"id": "kernel_pca",
 			"name": "Kernel PCA",
-			"description": "",
+			"description": "Kernel PCA is a subset of PCA methods where kernel methods are used to optimize the operation. It allows for the application of PCA to nonlinear datasets.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1628,7 +1625,7 @@ const ai_concept_map_data = {
 		{
 			"id": "rand_projections",
 			"name": "Random Projections",
-			"description": "",
+			"description": "A projection of a dataset can be made to reduce its dimensionality by projecting its feature space onto a smaller one. There are techniques to compute and apply different projections, such as using a Guassian random matrix vs. a sparse random matrix.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1650,7 +1647,7 @@ const ai_concept_map_data = {
 		{
 			"id": "corr_analysis",
 			"name": "Correspondence Analysis",
-			"description": "",
+			"description": "Correspondence analysis, or reciprocal averaging, is similar to principal component analysis, except that it applies to categorical data while PCA applies to continuous data. It's a visualization technique that helps to interpret results by preparing the data for analyzing multiple properties of the data and applying them to different types of graphical representations, such as contingency tables.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1672,7 +1669,7 @@ const ai_concept_map_data = {
 		{
 			"id": "clustering",
 			"name": "Clustering",
-			"description": "",
+			"description": "Clustering is a technique used to partition data points into distinct groups, called clusters, based on some identifiable patterns in the data. There are several ways to find these patterns and form these partitions that operate effectively on differently structured datasets.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1694,7 +1691,7 @@ const ai_concept_map_data = {
 		{
 			"id": "tsne",
 			"name": "t-SNE",
-			"description": "",
+			"description": "t-distributed stochastic neighbor embedding, or t-SNE, is a visualization algorithm suitable for high-dimensional data. As we can only meaningfully interpret graphical representations of up to 3 spatial dimensions, t-SNE attempts to compress a dataset into only a few dimensions and plot this on a 2D or 3D scatter plot. It attempts to cluster points based on similarity while reducing the dimensionality, allowing the visualization to be easily interpreted.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1716,7 +1713,7 @@ const ai_concept_map_data = {
 		{
 			"id": "decision_trees_ensembles",
 			"name": "Decision Tree Ensembles",
-			"description": "",
+			"description": "Groups of decision trees (also called forests) oftentimes classify or regress data with more accuracy than a single tree (base classifier). This is due to the fact that single decision trees are prone to overfitting and accompanying outliers when they shouldn't. Be combining multiple base classifiers, we're able to \"smooth\" out these impurities and obtain a more accurate model.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1738,7 +1735,7 @@ const ai_concept_map_data = {
 		{
 			"id": "chisquare",
 			"name": "Chi-square / Information Gain",
-			"description": "",
+			"description": "The Chi Square test is an indicator of co-occurrence between a feature and the various classes that occur in the dependent variable. When selecting features, we want to find features with a strong relationship towards the dependent variable. The Chi Square score evaluates this relationship by measuring the occurrences of a specific feature against which class the sample is provided. This can be used to then select the features with the most co-occurrences and reduce dimensionality by eliminating those with an unfavorable Chi Square score.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1760,7 +1757,7 @@ const ai_concept_map_data = {
 		{
 			"id": "multidimen_scaling",
 			"name": "Multidimensional Scaling",
-			"description": "",
+			"description": "Multidimesional scaling, also know in its classical form as Principal Coordinates Analysis (PCoA), is a general approach towards scaling a high-dimensional dataset into a specified lower number of dimensions. Each data point is scaled from its location in the full-dataset hyperspace into a hyperspace with less dimensions, reducing dimensionality while (ideally) retaining as much information descriptivity as possible.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1782,7 +1779,7 @@ const ai_concept_map_data = {
 		{
 			"id": "low_var_filter",
 			"name": "Low Variance Filter",
-			"description": "",
+			"description": "A variance filter reduces the dimensionality of data by eliminating feature pairs that have a sufficiently low variance between them. Features pairs' variance scores are calculated, and pairs with a score below a specified threshold are combined, as they do not provide enough descriptive power towards a dataset.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1804,7 +1801,7 @@ const ai_concept_map_data = {
 		{
 			"id": "missing_values",
 			"name": "Missing Values Ratio",
-			"description": "",
+			"description": "Features with many missing values don't provide much descriptive towards a dataset and may even negatively impact results. Removing features with too many missing or invalid values among the dataset will reduce dimensionality and possibly improve accuracy.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1826,7 +1823,7 @@ const ai_concept_map_data = {
 		{
 			"id": "bayesian_models",
 			"name": "Bayesian Models",
-			"description": "",
+			"description": "A Bayesian model, or a probabilistic directed acyclic graphical model, is a graphical model that represents a set of variables and their conditional dependencies using a directed acyclic graph (DAG). These models are used to represent the relationship between variables (whether they are causes, effects, or both).",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1848,7 +1845,7 @@ const ai_concept_map_data = {
 		{
 			"id": "factor_analysis",
 			"name": "Factor Analysis",
-			"description": "",
+			"description": "Factor analysis techniques describe variability in observed, correlated variables in terms of a few unobserved variables called factors. These \"latent\" variables may be affected by transformations to the observed variables in predictable ways, which allows the construction of a potentially smaller set of variables through which the dataset can be better represented. The observed variables are represented as linear combinations of these hidden, latent variables with added error terms.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1870,7 +1867,7 @@ const ai_concept_map_data = {
 		{
 			"id": "efa",
 			"name": "Exploratory Factor Analysis",
-			"description": "",
+			"description": "Exploratory factor analysis (EFA) techniques are used to identify complex relationships among observed variables by constructing a set of latent variables that can be used to construct the dataset.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1892,7 +1889,7 @@ const ai_concept_map_data = {
 		{
 			"id": "cfa",
 			"name": "Confirmatory Factor Analysis",
-			"description": "",
+			"description": "Confirmatory factor analysis (CFA) techniques are used to test whether the latent variables found during an exploratory analysis comply with hypotheses about the data.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1914,7 +1911,7 @@ const ai_concept_map_data = {
 		{
 			"id": "latent_var_models",
 			"name": "Latent Variable Models",
-			"description": "",
+			"description": "A latent variable model is a representation of a dataset that utilizes latent variables to describe the features present in the dataset. These unobserved latent variables can be thought of as building blocks for more complex features, which may be features in the dataset. For example, if feature X and feature Y can be predicted using one latent variable with different weights, then the entire dataset can be described using a single latent variable. With high-dimensional data, it is common to observe that the full dataset can be described using only a few latent variables. These latent variables can then be used in classifiers to improve speed and sometimes even performance.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1936,7 +1933,7 @@ const ai_concept_map_data = {
 		{
 			"id": "blind_signal",
 			"name": "Blind Signal Separation",
-			"description": "",
+			"description": "Blind signal separation, also known as blind source separation, is a set of problems focused on taking a combined input of two or more sources and classifying which source each one is derived from. For example, in speech analysis, a common problem is to identify which person a specific sentence originated from. Blind signal separation is a field of models dedicated towards extracting this information.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1958,7 +1955,7 @@ const ai_concept_map_data = {
 		{
 			"id": "svd",
 			"name": "SVD",
-			"description": "",
+			"description": "Singular value decomposition is a matrix operation used to extract the singular values from a matrix. Singular values can be useful in further analysis and preprocessing, such as for dimensionality reduction. For example, the singular value decomposition provides the necessary elements of a dataset to determine what the most important features are, and how removing a specific feature will impact the descriptivity of a dataset.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -1980,73 +1977,7 @@ const ai_concept_map_data = {
 		{
 			"id": "ica",
 			"name": "ICA",
-			"description": "",
-			"when": {
-					"description": "",
-					"cases": []
-			},
-			"how": {
-				"description": "",
-				"steps": []
-			},
-			"tools": {
-				"description": "",
-				"links": []
-			},
-			"links": {
-				"description": "",
-				"links": []
-			},
-			"keywords": []
-		},
-		{
-			"id": "dca",
-			"name": "DCA",
-			"description": "",
-			"when": {
-					"description": "",
-					"cases": []
-			},
-			"how": {
-				"description": "",
-				"steps": []
-			},
-			"tools": {
-				"description": "",
-				"links": []
-			},
-			"links": {
-				"description": "",
-				"links": []
-			},
-			"keywords": []
-		},
-		{
-			"id": "nnmf",
-			"name": "NNMF",
-			"description": "",
-			"when": {
-					"description": "",
-					"cases": []
-			},
-			"how": {
-				"description": "",
-				"steps": []
-			},
-			"tools": {
-				"description": "",
-				"links": []
-			},
-			"links": {
-				"description": "",
-				"links": []
-			},
-			"keywords": []
-		},
-		{
-			"id": "lccad",
-			"name": "LCCAD",
-			"description": "",
+			"description": "Independent component analysis is subset of blind signal separation. It's an approach for separating a multivariate signal into additive subcomponents. To do this, the signals are assumed to be non-Gaussian and statistically independent. From there, algorithms attempt to minimize mutual information (between the signals) and maximize the non-Gaussianity.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -2068,29 +1999,7 @@ const ai_concept_map_data = {
 		{
 			"id": "ssa",
 			"name": "SSA",
-			"description": "",
-			"when": {
-					"description": "",
-					"cases": []
-			},
-			"how": {
-				"description": "",
-				"steps": []
-			},
-			"tools": {
-				"description": "",
-				"links": []
-			},
-			"links": {
-				"description": "",
-				"links": []
-			},
-			"keywords": []
-		},
-		{
-			"id": "csp",
-			"name": "CSP",
-			"description": "",
+			"description": "Singular spectrum analysis is the process of separating a time series into a sum of additive components. These algorithms utilize singular value decomposition applies to covariance matrices.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -2112,7 +2021,7 @@ const ai_concept_map_data = {
 		{
 			"id": "meth_moments",
 			"name": "Method of Moments",
-			"description": "",
+			"description": "The method of moments is a technique used to estimate population parameters such as the mean or standard deviation. For example, the first moment is the sample mean - this can be used as a very basic estimator. The second moment is the variance. These and higher moments can be used as latent variables.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -2134,7 +2043,7 @@ const ai_concept_map_data = {
 		{
 			"id": "exp_max_algo",
 			"name": "Expectation-Maximization Algorithm",
-			"description": "",
+			"description": "The expectation-maximization (EP) algorithm is used to find parameter estimations from a statistical model that can be used to determine the distribution of latent variables. The algorithm alternates between expectation (E) steps and maximization (M) steps to find these estimates.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -2156,7 +2065,7 @@ const ai_concept_map_data = {
 		{
 			"id": "self_organ_maps",
 			"name": "Self-Organizing Maps",
-			"description": "",
+			"description": "A self-organizing map is a type of neural network used to produce a low-dimensional representation of the dataset called a map. They employ competitive learning instead of error-correction learning.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -2178,7 +2087,7 @@ const ai_concept_map_data = {
 		{
 			"id": "adapt_reson_theory",
 			"name": "Adaptive Resonance Theory",
-			"description": "",
+			"description": "Adaptive resonance theory, inspired by how the human brain processes information, is a framework to describe how artificial neural networks address problems such as pattern recognition and prediction. The idea is that the brain processes these problems using both top-down observations and bottom-up sensory information, arriving at a satisfactory result somewhere in the middle of this abstract hierarchy.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -2200,7 +2109,7 @@ const ai_concept_map_data = {
 		{
 			"id": "hierarch_clustering",
 			"name": "Hierarchical Clustering",
-			"description": "",
+			"description": "Hierarchical clustering is a clustering algorithm that initially treats all samples as either one or N (where N is the number of total data points) clusters and either merging or separating these clusters, respectively, to find the optimal representation. This allows the user to identify which clusters were formed in order, allowing a \"hierarchy\" of clusters based on their relative descriptivity to be developed and observed.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -2222,7 +2131,7 @@ const ai_concept_map_data = {
 		{
 			"id": "agglomerative",
 			"name": "Agglomerative",
-			"description": "",
+			"description": "Agglomerative clustering is a set of hierarchical clustering algorithms that operate by treating each data point as a separate cluster then combining the two most similar clusters. When the user-specified number of clusters is reached, the algorithm finishes.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -2244,7 +2153,7 @@ const ai_concept_map_data = {
 		{
 			"id": "divisive",
 			"name": "Divisive",
-			"description": "",
+			"description": "Agglomerative clustering is a set of hierarchical clustering algorithms that operate by treating the entire dataset as a single cluster then dividing the cluster until it reaches a user-specified number of clusters. When the user-specified number of clusters is reached, the algorithm finishes.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -2266,7 +2175,7 @@ const ai_concept_map_data = {
 		{
 			"id": "centroid_clustering",
 			"name": "Centroid-Based Clustering",
-			"description": "",
+			"description": "Centroid-based clustering techniques are clustering algorithms that utilize the notion of a centroid, which can be described as the center of mass of a set of data points. Throughout the application of the algorithm, the centroid of each cluster is evaluated and used to determine membership of new, unclustered data points.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -2288,7 +2197,7 @@ const ai_concept_map_data = {
 		{
 			"id": "kmeans_clustering",
 			"name": "k-means Clustering",
-			"description": "",
+			"description": "k-means clustering is a popular centroid-based clustering technique that adds new data points into clusters with the nearest mean before reevaluating the mean of that cluster.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -2310,7 +2219,7 @@ const ai_concept_map_data = {
 		{
 			"id": "kmedians_clustering",
 			"name": "k-medians Clustering",
-			"description": "",
+			"description": "k-medians clustering is a popular centroid-based clustering technique that adds new data points into clusters with the nearest median before reevaluating the median of that cluster.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -2332,7 +2241,7 @@ const ai_concept_map_data = {
 		{
 			"id": "kmeans++_clustering",
 			"name": "k-means++ Clustering",
-			"description": "",
+			"description": "The k-means++ algorithm is used to determine the initial data points to use as clusters for the k-means algorithm. Since the k-means algorithm is sensitive to its initial conditions, k-means++ attempts to optimize these initial parameters to improve the clustering performance.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -2354,7 +2263,7 @@ const ai_concept_map_data = {
 		{
 			"id": "fuzzy_cmeans_clustering",
 			"name": "Fuzzy c-means Clustering",
-			"description": "",
+			"description": "Fuzzy c-means clustering is a clustering technique in which each data point can belong to several clusters. It's similar to the k-means clustering algorithm, in that you specify a number of clusters to partition the dataset into. However, in fuzzy c-means clustering, you assign coefficients randomly to each data point, then run a centroid-based clustering algorithm and compute coefficients of membership for each cluster, essentially representing the relative likelihood of the data point belonging to each cluster.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -2376,7 +2285,7 @@ const ai_concept_map_data = {
 		{
 			"id": "distri_clustering",
 			"name": "Distribution-Based Clustering",
-			"description": "",
+			"description": "Distribution based clustering models defines clusters as groups of data points most likely belonging to the same distribution. Then, random data points can be sampled and assigned to the cluster with the most relevant distribution.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -2398,7 +2307,7 @@ const ai_concept_map_data = {
 		{
 			"id": "gauss_mixture",
 			"name": "Gaussian Mixture Models",
-			"description": "",
+			"description": "Generally, mixture models are probabilistic models used to represent the presence of subpopulations within a population. A Gaussian mixture model assumes this population follows a Gaussian, or normal, distribution. A Gaussian mixture model, then, attempts to infer the properties of the subpopulations (clusters) given only observations on the pooled population with the assumption that the population observes a Gaussian distribution.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -2420,7 +2329,7 @@ const ai_concept_map_data = {
 		{
 			"id": "density_clustering",
 			"name": "Density-Based Clustering",
-			"description": "",
+			"description": "Density-based clustering techniques are clustering algorithms that utilize the density of subpopulations, or clusters, to evaluate membership of a newly observed datapoint. Throughout the application of the algorithm, the density of either the entire cluster or a local region within that cluster will be evaluated and compared against the distance of the new data point with the relevant cluster or subcluster to determine membership.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -2442,7 +2351,7 @@ const ai_concept_map_data = {
 		{
 			"id": "dbscan",
 			"name": "DBSCAN",
-			"description": "",
+			"description": "Density-based spatial clustering of applications with noise (DBSCAN) is a popular density-based clustering algorithm that groups together points that are densely packed together and marks outliers in sparse regions.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -2464,7 +2373,7 @@ const ai_concept_map_data = {
 		{
 			"id": "optics",
 			"name": "OPTICS",
-			"description": "",
+			"description": "Ordering points to identify the clustering structure (OPTICS) is a density-based clustering algorithm similar to DBSCAN. It contrasts with DBSCAN in that it's able to handle a dataset with regions of varying density, as variable density may simply be a data collection or sampling issue instead of representing an inherent density variability in the data.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -2486,7 +2395,7 @@ const ai_concept_map_data = {
 		{
 			"id": "preclustering",
 			"name": "Pre-Clustering",
-			"description": "",
+			"description": "Pre-clustering techniques are algorithms that preprocess or prepare a dataset to optimize the clustering algorithms applied on it.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -2508,7 +2417,7 @@ const ai_concept_map_data = {
 		{
 			"id": "canopy_clustering",
 			"name": "Canopy Clustering",
-			"description": "",
+			"description": "The canopy clustering algorithm is a pre-clustering algorithm used commonly to prepare a dataset for the k-means or hierarchical clustering methods. It improves the speed of the clustering algorithms on large datasets.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -2530,29 +2439,7 @@ const ai_concept_map_data = {
 		{
 			"id": "corr_clustering",
 			"name": "Correlation Clustering",
-			"description": "",
-			"when": {
-					"description": "",
-					"cases": []
-			},
-			"how": {
-				"description": "",
-				"steps": []
-			},
-			"tools": {
-				"description": "",
-				"links": []
-			},
-			"links": {
-				"description": "",
-				"links": []
-			},
-			"keywords": []
-		},
-		{
-			"id": "ccpivot",
-			"name": "CC-Pivot",
-			"description": "",
+			"description": "Correlation clustering methods are a set of clustering methods that operate on a dataset where the relationships between data points are known beforehand. These techniques optimize to maximize cluster similarity or minimize cluster dissimilarity.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -2574,7 +2461,7 @@ const ai_concept_map_data = {
 		{
 			"id": "subspace_clustering",
 			"name": "Subspace Clustering",
-			"description": "",
+			"description": "Subspace clustering techniques reduce the data into a smaller subspace in order to find more effective and computationally feasible clusters. High-dimensional data may lose granularity when projected onto low-dimensional spaces, but clusters are sometimes better identified and calculated on these less descriptive subspaces.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -2596,7 +2483,7 @@ const ai_concept_map_data = {
 		{
 			"id": "clique",
 			"name": "CLIQUE",
-			"description": "",
+			"description": "Clustering in Quest (CLIQUE) is a density-based subspace clustering algorithm that discretizes the data space through a grid and estimates the density of each cluster by counting the number of points in each grid cell.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -2618,7 +2505,7 @@ const ai_concept_map_data = {
 		{
 			"id": "subclu",
 			"name": "SUBCLU",
-			"description": "",
+			"description": "SUBCLU is a density-based subspace clustering algorithm that improves on the work of DBSCAN by allowing the identification of clusters in axis-parallel subspaces using a bottom-up, greedy strategy to remain efficient.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -2640,7 +2527,7 @@ const ai_concept_map_data = {
 		{
 			"id": "graph_methods",
 			"name": "Graph-Based Methods",
-			"description": "",
+			"description": "Graph-based clustering methods utilize information gained from a dataset using graph theory concepts, such as cliques, clusters, subnetworks, centrality, outliers, etc. to efficiently cluster datasets.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -2662,7 +2549,7 @@ const ai_concept_map_data = {
 		{
 			"id": "generative_models",
 			"name": "Generative Models",
-			"description": "",
+			"description": "A generative model in machine learning is a model tasked with reconstructing the dataset to a level of accuracy by which its able to generate entirely new data points with the same variations as the original dataset. Generative models are often combined with discriminative models to form a \"competitive\" model that attempts to learn how to properly classify and generate data points from the original data set at the same time.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -2684,7 +2571,7 @@ const ai_concept_map_data = {
 		{
 			"id": "low_density_separation",
 			"name": "Low-Density Separation",
-			"description": "",
+			"description": "Low-density separation is a technique that applies a SVM to better separate data by forcing the SVM to create its decision boundary in regions of low density, as determined by clustering methods. This allows for an effective decision boundary to be found in high-dimensional data while remaining computationally feasible.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -2706,7 +2593,7 @@ const ai_concept_map_data = {
 		{
 			"id": "transductive_svm",
 			"name": "Transductive SVM",
-			"description": "",
+			"description": "A transductive SVM is a modified type of SVM that is able to handle and classify unlabeled data.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -2728,7 +2615,7 @@ const ai_concept_map_data = {
 		{
 			"id": "evo_strategies",
 			"name": "Evolution Strategies",
-			"description": "",
+			"description": "Evolution strategies are optimization techniques based on the concepts from natural evolution. Common in reinforcement learning, these techniques allow algorithms to develop over time to adapt either the model or classifier to the data.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -2750,7 +2637,7 @@ const ai_concept_map_data = {
 		{
 			"id": "markov_decision_processes",
 			"name": "Markov Decision Processes",
-			"description": "",
+			"description": "A Markov decision process is a discrete time stochastic control process. In a situation where outcomes are partly random and partly the effect of some decision maker, they provide a mathematical framework for modeling decision making. They can aid in studying optimization problems and are an important concept in reinforcement learning.",
 			"when": {
 					"description": "",
 					"cases": []
