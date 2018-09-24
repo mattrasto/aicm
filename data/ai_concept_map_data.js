@@ -525,7 +525,7 @@ const ai_concept_map_data = {
 		{
 			"id": "stacked_autoencoders",
 			"name": "Stacked Autoencoders",
-			"description": "Some neural network architectures may benefit by using autoencoders in middle layers to reduce the 'representation' of the data into a compressed form. Stacked autoencoders are just this: neural networks with sparse autoencoder layers embedded as a hidden layer.",
+			"description": "Some neural network architectures may benefit by using autoencoders in middle layers to reduce the \"representation\" of the data into a compressed form. Stacked autoencoders are just this: neural networks with sparse autoencoder layers embedded as a hidden layer.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -547,7 +547,7 @@ const ai_concept_map_data = {
 		{
 			"id": "svm",
 			"name": "Support Vector Machines",
-			"description": "SVMs are classifiers that distinguish between groups using a 'maximum-margin hyperplane,' which you can think of as a line separating examples from a dataset that is as wide as possible. By finding the widest line separating examples between the two classes, we assume this division is the best classification. SVMs are typically used as binary classifiers, though there are modified algorithms that can be used for multi-class classification. While typically SVMs are used for linear classification, you can map their inputs into high-dimensional feature spaces and then using a linear classifier in this high-dimensional feature space. This is called the 'kernel trick.'",
+			"description": "SVMs are classifiers that distinguish between groups using a \"maximum-margin hyperplane,\" which you can think of as a line separating examples from a dataset that is as wide as possible. By finding the widest line separating examples between the two classes, we assume this division is the best classification. SVMs are typically used as binary classifiers, though there are modified algorithms that can be used for multi-class classification. While typically SVMs are used for linear classification, you can map their inputs into high-dimensional feature spaces and then using a linear classifier in this high-dimensional feature space. This is called the \"kernel trick.\"",
 			"when": {
 					"description": "",
 					"cases": []
@@ -569,7 +569,7 @@ const ai_concept_map_data = {
 		{
 			"id": "nonlinear_svm",
 			"name": "Non-Linear SVM",
-			"description": "A non-linear SVM is simply an SVM that uses the kernel trick to classify datasets that aren't linearly separable. If you wish to use an SVM on a dataset best fit using, say, a quadratic function, then you'll need to use a proper kernel function (also known as a 'Mercer kernel') to map the data to a high-dimensional feature space in which you can linearly separate the data. Note that there are a limited number of kernel functions which can be used, as they must satisfy a few conditions in order to be viable. Most machine learning libraries support non-linear SVMs and provide these kernel functions for use.",
+			"description": "A non-linear SVM is simply an SVM that uses the kernel trick to classify datasets that aren't linearly separable. If you wish to use an SVM on a dataset best fit using, say, a quadratic function, then you'll need to use a proper kernel function (also known as a \"Mercer kernel\") to map the data to a high-dimensional feature space in which you can linearly separate the data. Note that there are a limited number of kernel functions which can be used, as they must satisfy a few conditions in order to be viable. Most machine learning libraries support non-linear SVMs and provide these kernel functions for use.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -613,7 +613,7 @@ const ai_concept_map_data = {
 		{
 			"id": "naive_bayes",
 			"name": "Naive Bayes",
-			"description": "Naive Bayes is a classifier based on statistics calculated on the existing dataset. It's friendly to high-dimensional data, and can be applied to both numeric and non-numeric data (though the latter is more common). Depending on the type of classifier used (there are typically three types: Gaussian, Bernoulli, and Multinomial), the exact statistics and formulas are used. In a Gaussian Naive Bayes classifier, the probabilities for a new sample are provided in terms of 'probability that new sample is class X' and 'ratio of all samples that are class X to all samples.' From this, we multiply both probabilities to find the 'prior probability' for each class, which is used to classify the new sample. Because samples are classified based on a combination of past classification ratios and an analysis of 'samples like it,' it is well-suited for realtime classification.",
+			"description": "Naive Bayes is a classifier based on statistics calculated on the existing dataset. It's friendly to high-dimensional data, and can be applied to both numeric and non-numeric data (though the latter is more common). Depending on the type of classifier used (there are typically three types: Gaussian, Bernoulli, and Multinomial), the exact statistics and formulas are used. In a Gaussian Naive Bayes classifier, the probabilities for a new sample are provided in terms of \"probability that new sample is class X\" and \"ratio of all samples that are class X to all samples.\" From this, we multiply both probabilities to find the \"prior probability\" for each class, which is used to classify the new sample. Because samples are classified based on a combination of past classification ratios and an analysis of \"samples like it,\" it is well-suited for realtime classification.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -635,7 +635,7 @@ const ai_concept_map_data = {
 		{
 			"id": "regressions",
 			"name": "Regressions",
-			"description": "A regression is a measure of the relationship between a dependent variable (in machine learning, this is the class or Y) and one or more independent variables (the features). There are multiple ways to perform regression, but the goal is always to find some mathematical representation of this relationship. You can think of it as an 'approximation line' that could be straight, curved, or all manners of misshapen as long as it is mathematically representable.",
+			"description": "A regression is a measure of the relationship between a dependent variable (in machine learning, this is the class or Y) and one or more independent variables (the features). There are multiple ways to perform regression, but the goal is always to find some mathematical representation of this relationship. You can think of it as an \"approximation line\" that could be straight, curved, or all manners of misshapen as long as it is mathematically representable.",
 			"when": {
 					"description": "",
 					"cases": []
@@ -679,7 +679,7 @@ const ai_concept_map_data = {
 		{
 			"id": "multi_linear_regression",
 			"name": "Multiple Linear Regression",
-			"description": "A multiple linear regression is a type of linear regression with multiple features. That's it - if you have more than one feature, then a linear regression is called a multiple linear regression. It can be used for prediction, but also for determining which features are most important. If your dataset is properly scaled to the number of features you have (typically recommended to be at least 10-20 times larger) then you can inspect the weights on each feature after training to answer the question 'what is the best predictor of Y?'",
+			"description": "A multiple linear regression is a type of linear regression with multiple features. That's it - if you have more than one feature, then a linear regression is called a multiple linear regression. It can be used for prediction, but also for determining which features are most important. If your dataset is properly scaled to the number of features you have (typically recommended to be at least 10-20 times larger) then you can inspect the weights on each feature after training to answer the question \"what is the best predictor of Y?\"",
 			"when": {
 					"description": "",
 					"cases": []
@@ -833,7 +833,7 @@ const ai_concept_map_data = {
 		{
 			"id": "hidden_markov_model",
 			"name": "Hidden Markov Model",
-			"description": "Hidden markov models are Markov chains in which the state is partially observable and thus can only be imprecisely determined. This is useful for some models, such as in speech signal classification where signals (voice data) are complex but can be decoded in a Markov chain by determining the most likely 'path' through the model in terms of a sequence of words.",
+			"description": "Hidden markov models are Markov chains in which the state is partially observable and thus can only be imprecisely determined. This is useful for some models, such as in speech signal classification where signals (voice data) are complex but can be decoded in a Markov chain by determining the most likely \"path\" through the model in terms of a sequence of words.",
 			"when": {
 					"description": "",
 					"cases": []
