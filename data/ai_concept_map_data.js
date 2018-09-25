@@ -214,7 +214,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -236,7 +242,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -258,7 +270,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -280,7 +298,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -330,7 +354,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -352,7 +382,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -430,7 +466,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "ArXiv Paper",
+						"link": "https://arxiv.org/abs/1803.08165",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -452,7 +494,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "ArXiv Paper",
+						"link": "https://arxiv.org/abs/1511.04834",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -474,7 +522,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -496,7 +550,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -540,7 +600,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -562,7 +628,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -584,7 +656,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -606,7 +684,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -628,7 +712,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -650,7 +740,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -672,7 +768,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -694,7 +796,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -716,7 +824,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -738,7 +852,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -760,7 +880,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -804,7 +930,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -826,7 +958,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -848,7 +986,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -870,7 +1014,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -892,7 +1042,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -914,7 +1070,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -936,7 +1098,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -958,7 +1126,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -980,7 +1154,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -1002,7 +1182,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -1024,7 +1210,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -1046,7 +1238,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -1068,7 +1266,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -1090,7 +1294,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -1112,7 +1322,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -1134,7 +1350,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -1156,7 +1378,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -1178,7 +1406,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -1200,7 +1434,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -1222,7 +1462,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -1244,7 +1490,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -1266,7 +1518,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -1288,7 +1546,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -1310,7 +1574,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -1332,7 +1602,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -1354,7 +1630,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -1376,7 +1658,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -1398,7 +1686,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -1420,7 +1714,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -1442,7 +1742,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -1464,7 +1770,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -1486,7 +1798,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -1508,7 +1826,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -1530,7 +1854,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -1552,7 +1882,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -1574,7 +1910,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -1596,7 +1938,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -1618,7 +1966,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -1640,7 +1994,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -1662,7 +2022,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -1684,7 +2050,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -1706,7 +2078,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -1728,7 +2106,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -1750,7 +2134,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -1772,7 +2162,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -1794,7 +2190,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -1816,7 +2218,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -1838,7 +2246,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -1860,7 +2274,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -1882,7 +2302,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -1904,7 +2330,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -1926,7 +2358,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -1948,7 +2386,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -1970,7 +2414,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -1992,7 +2442,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -2014,7 +2470,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -2036,7 +2498,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -2058,7 +2526,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -2080,7 +2554,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -2102,7 +2582,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -2124,7 +2610,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -2146,7 +2638,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -2168,7 +2666,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -2190,7 +2694,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -2212,7 +2722,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -2234,7 +2750,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -2256,7 +2778,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -2278,7 +2806,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -2300,7 +2834,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -2322,7 +2862,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -2344,7 +2890,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -2366,7 +2918,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -2388,7 +2946,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -2410,7 +2974,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -2432,7 +3002,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -2454,7 +3030,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -2476,7 +3058,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -2498,7 +3086,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -2520,7 +3114,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -2542,7 +3142,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -2564,7 +3170,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -2586,7 +3198,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -2608,7 +3226,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -2630,7 +3254,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -2652,7 +3282,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "",
+						"link": "",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		}
