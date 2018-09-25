@@ -1155,6 +1155,11 @@ const ai_concept_map_data = {
 						"name": "Wikipedia",
 						"link": "https://en.wikipedia.org/wiki/Anomaly_detection",
 						"description": ""
+					},
+					{
+						"name": "Srinath Perera WordPress",
+						"link": "https://iwringer.wordpress.com/2015/11/17/anomaly-detection-concepts-and-techniques/",
+						"description": "This blog post lists a few techniques for anomaly detection"
 					}
 				]
 			},
@@ -1414,8 +1419,8 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
+						"name": "Wikipedia",
+						"link": "https://en.wikipedia.org/wiki/Bootstrap_aggregating",
 						"description": ""
 					}
 				]
@@ -1442,8 +1447,8 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
+						"name": "Wikipedia",
+						"link": "https://en.wikipedia.org/wiki/Random_forest",
 						"description": ""
 					}
 				]
@@ -1470,8 +1475,8 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
+						"name": "Machine Learning Mastery",
+						"link": "https://machinelearningmastery.com/gentle-introduction-gradient-boosting-algorithm-machine-learning/",
 						"description": ""
 					}
 				]
@@ -1498,9 +1503,14 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
+						"name": "Wikipedia",
+						"link": "https://en.wikipedia.org/wiki/Gradient_boosting",
 						"description": ""
+					},
+					{
+						"name": "Ben Gorman Kaggle Blog Post",
+						"link": "http://blog.kaggle.com/2017/01/23/a-kaggle-master-explains-gradient-boosting/",
+						"description": "This blog post goes in depth on the history, motivations, and techniques of gradient boosting"
 					}
 				]
 			},
@@ -1526,8 +1536,8 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
+						"name": "Wikipedia",
+						"link": "https://en.wikipedia.org/wiki/AdaBoost",
 						"description": ""
 					}
 				]
@@ -1554,8 +1564,13 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
+						"name": "Wikipedia",
+						"link": "https://en.wikipedia.org/wiki/Random_subspace_method",
+						"description": ""
+					},
+					{
+						"name": "UMass Amherst Paper",
+						"link": "https://people.cs.umass.edu/~mccallum/papers/ir402bags.pdf",
 						"description": ""
 					}
 				]
@@ -1582,8 +1597,8 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
+						"name": "Wikipedia",
+						"link": "https://en.wikipedia.org/wiki/Normalization_(statistics)",
 						"description": ""
 					}
 				]
@@ -1610,9 +1625,9 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
-						"description": ""
+						"name": "Srinath Perera WordPress",
+						"link": "https://iwringer.wordpress.com/2015/11/17/anomaly-detection-concepts-and-techniques/",
+						"description": "This blog post lists a few techniques for anomaly detection, including a section for static rules"
 					}
 				]
 			},
@@ -1638,8 +1653,8 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
+						"name": "ResearchGate Paper",
+						"link": "https://www.researchgate.net/publication/221173855_A_fuzzy_logic-based_method_for_outliers_detection",
 						"description": ""
 					}
 				]
@@ -1666,8 +1681,8 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
+						"name": "Semantic Scholar Paper",
+						"link": "https://pdfs.semanticscholar.org/76fa/097495eddd1881892beadfc36d9cfba834e6.pdf",
 						"description": ""
 					}
 				]
@@ -1694,9 +1709,9 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
-						"description": ""
+						"name": "Data Science Stack Exchange Question: RepNN vs. Autoencoder",
+						"link": "https://datascience.stackexchange.com/questions/12219/difference-replicator-neural-network-vs-autoencoder",
+						"description": "This question and the accompanying answers contrast RepNNs from autoencoders and highlight key characteristics of RepNNs"
 					}
 				]
 			},
@@ -1722,8 +1737,8 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
+						"name": "sklearn Documentation",
+						"link": "http://scikit-learn.org/stable/auto_examples/svm/plot_oneclass.html",
 						"description": ""
 					}
 				]
@@ -1750,8 +1765,8 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
+						"name": "ACM Digital Library Paper",
+						"link": "https://dl.acm.org/citation.cfm?id=2339588",
 						"description": ""
 					}
 				]
@@ -1778,8 +1793,8 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
+						"name": "Domino Lab Blog",
+						"link": "https://blog.dominodatalab.com/topology-and-density-based-clustering/",
 						"description": ""
 					}
 				]
@@ -1806,8 +1821,8 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
+						"name": "Wikipedia",
+						"link": "https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm",
 						"description": ""
 					}
 				]
@@ -1834,8 +1849,8 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
+						"name": "Wikipedia",
+						"link": "https://en.wikipedia.org/wiki/Local_outlier_factor",
 						"description": ""
 					}
 				]
@@ -1862,9 +1877,9 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
-						"description": ""
+						"name": "KNIME Blog",
+						"link": "https://www.knime.com/blog/seven-techniques-for-data-dimensionality-reduction",
+						"description": "This blog post covers several approaches for dimensionality reduction, including high correlation filters"
 					}
 				]
 			},
@@ -1890,9 +1905,9 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
-						"description": ""
+						"name": "KNIME Blog",
+						"link": "https://www.knime.com/blog/seven-techniques-for-data-dimensionality-reduction",
+						"description": "This blog post covers several approaches for dimensionality reduction, including backward feature elimination"
 					}
 				]
 			},
@@ -1918,9 +1933,9 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
-						"description": ""
+						"name": "KNIME Blog",
+						"link": "https://www.knime.com/blog/seven-techniques-for-data-dimensionality-reduction",
+						"description": "This blog post covers several approaches for dimensionality reduction, including forward feature selection"
 					}
 				]
 			},
@@ -1946,8 +1961,8 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
+						"name": "Wikipedia",
+						"link": "https://en.wikipedia.org/wiki/Non-negative_matrix_factorization",
 						"description": ""
 					}
 				]
@@ -1974,9 +1989,14 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
+						"name": "Wikipedia",
+						"link": "https://en.wikipedia.org/wiki/Principal_component_analysis",
 						"description": ""
+					},
+					{
+						"name": "Setosa",
+						"link": "http://setosa.io/ev/principal-component-analysis/",
+						"description": "This blog post explains and visualizes the implementation of PCA"
 					}
 				]
 			},
@@ -2002,8 +2022,8 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
+						"name": "StartupCTO Blog",
+						"link": "https://startupcto.io/dimensionality-reduction-graph-based-kernel-pca/",
 						"description": ""
 					}
 				]
@@ -2030,8 +2050,8 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
+						"name": "Wikipedia",
+						"link": "https://en.wikipedia.org/wiki/Kernel_principal_component_analysis",
 						"description": ""
 					}
 				]
@@ -2058,8 +2078,8 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
+						"name": "sklearn Documentation",
+						"link": "http://scikit-learn.org/stable/modules/random_projection.html",
 						"description": ""
 					}
 				]
@@ -2086,8 +2106,18 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
+						"name": "Wikipedia",
+						"link": "https://en.wikipedia.org/wiki/Correspondence_analysis",
+						"description": ""
+					},
+					{
+						"name": "Statsoft",
+						"link": "http://www.statsoft.com/Textbook/Correspondence-Analysis",
+						"description": ""
+					},
+					{
+						"name": "The Mathematica Journal",
+						"link": "http://www.mathematica-journal.com/2010/09/an-introduction-to-correspondence-analysis/",
 						"description": ""
 					}
 				]
@@ -2114,8 +2144,8 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
+						"name": "Clustering",
+						"link": "https://en.wikipedia.org/wiki/Cluster_analysis",
 						"description": ""
 					}
 				]
@@ -2142,8 +2172,8 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
+						"name": "Wikipedia",
+						"link": "https://en.wikipedia.org/wiki/T-distributed_stochastic_neighbor_embedding",
 						"description": ""
 					}
 				]
@@ -2170,8 +2200,8 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
+						"name": "Towards Data Science",
+						"link": "https://towardsdatascience.com/decision-tree-ensembles-bagging-and-boosting-266a8ba60fd9",
 						"description": ""
 					}
 				]
@@ -2198,8 +2228,8 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
+						"name": "Learn for Master",
+						"link": "http://www.learn4master.com/machine-learning/chi-square-test-for-feature-selection",
 						"description": ""
 					}
 				]
@@ -2226,8 +2256,8 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
+						"name": "Wikipedia",
+						"link": "https://en.wikipedia.org/wiki/Multidimensional_scaling",
 						"description": ""
 					}
 				]
@@ -2254,9 +2284,9 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
-						"description": ""
+						"name": "KNIME Blog",
+						"link": "https://www.knime.com/blog/seven-techniques-for-data-dimensionality-reduction",
+						"description": "This blog post covers several approaches for dimensionality reduction, including low variance filters"
 					}
 				]
 			},
@@ -2282,9 +2312,9 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
-						"description": ""
+						"name": "KNIME Blog",
+						"link": "https://www.knime.com/blog/seven-techniques-for-data-dimensionality-reduction",
+						"description": "This blog post covers several approaches for dimensionality reduction, including missing value ratios"
 					}
 				]
 			},
@@ -2310,8 +2340,8 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
+						"name": "Wikipedia",
+						"link": "https://en.wikipedia.org/wiki/Bayesian_network",
 						"description": ""
 					}
 				]
