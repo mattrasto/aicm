@@ -460,7 +460,7 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "Koutník et al.",
+						"name": "ArXiv Paper",
 						"link": "https://arxiv.org/pdf/1402.3511v1.pdf",
 						"description": "This paper from the folks at the Swiss AI lab IDSIA describes the method in full"
 					}
@@ -544,9 +544,14 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
+						"name": "Wikipedia",
+						"link": "https://en.wikipedia.org/wiki/Generative_adversarial_network",
 						"description": ""
+					},
+					{
+						"name": "Skymind",
+						"link": "https://skymind.ai/wiki/generative-adversarial-network-gan",
+						"description": "This wiki post explains GANs with a more technical approach"
 					}
 				]
 			},
@@ -572,9 +577,9 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
-						"description": ""
+						"name": "Towards Data Science",
+						"link": "https://towardsdatascience.com/what-the-hell-is-perceptron-626217814f53",
+						"description": "This blog post covers the basics of perceptrons"
 					}
 				]
 			},
@@ -598,7 +603,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "Wikipedia",
+						"link": "https://en.wikipedia.org/wiki/Autoencoder",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -622,8 +633,8 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
+						"name": "UFLDL Wiki",
+						"link": "http://ufldl.stanford.edu/wiki/index.php/Stacked_Autoencoders",
 						"description": ""
 					}
 				]
@@ -650,8 +661,8 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
+						"name": "Wikipedia",
+						"link": "https://en.wikipedia.org/wiki/Support_vector_machine",
 						"description": ""
 					}
 				]
@@ -678,8 +689,8 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
+						"name": "Stanford NLP Lab",
+						"link": "https://nlp.stanford.edu/IR-book/html/htmledition/nonlinear-svms-1.html",
 						"description": ""
 					}
 				]
@@ -706,8 +717,8 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
+						"name": "Machine Learning Mastery",
+						"link": "https://machinelearningmastery.com/support-vector-machines-for-machine-learning/",
 						"description": ""
 					}
 				]
@@ -734,9 +745,14 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
+						"name": "Statsoft",
+						"link": "http://www.statsoft.com/textbook/naive-bayes-classifier",
 						"description": ""
+					},
+					{
+						"name": "Dr. GP Pulipaka Medium Post",
+						"link": "https://medium.com/@gp_pulipaka/applying-gaussian-na%C3%AFve-bayes-classifier-in-python-part-one-9f82aa8d9ec4",
+						"description": "This blog post series goes over the basics of implementing Naive Bayes in Python"
 					}
 				]
 			},
@@ -762,9 +778,9 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
-						"description": ""
+						"name": "Investopedia",
+						"link": "https://www.investopedia.com/terms/r/regression.asp",
+						"description": "This Investopedia post is aimed towards financial analysts but effectively covers the basics"
 					}
 				]
 			},
@@ -790,8 +806,8 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
+						"name": "Towards Data Science",
+						"link": "https://towardsdatascience.com/logistic-regression-detailed-overview-46c4da4303bc",
 						"description": ""
 					}
 				]
@@ -818,8 +834,8 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
+						"name": "Statsoft",
+						"link": "http://www.statsoft.com/Textbook/Multiple-Regression",
 						"description": ""
 					}
 				]
@@ -846,9 +862,9 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
-						"description": ""
+						"name": "Penn State STAT 501 Tutorial",
+						"link": "https://onlinecourses.science.psu.edu/stat501/node/251/",
+						"description": "This tutorial covers the basics of linear regression"
 					}
 				]
 			},
@@ -874,9 +890,9 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
-						"description": ""
+						"name": "Penn State STAT 501 Tutorial",
+						"link": "https://onlinecourses.science.psu.edu/stat501/node/251/",
+						"description": "This tutorial covers the basics of linear regression"
 					}
 				]
 			},
@@ -902,9 +918,9 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
-						"description": ""
+						"name": "Handbook of Biological Statistics",
+						"link": "http://www.biostathandbook.com/curvilinearregression.html",
+						"description": "This post describes when and how to use curvilinear regression"
 					}
 				]
 			},
@@ -928,7 +944,13 @@ const ai_concept_map_data = {
 			},
 			"links": {
 				"description": "",
-				"links": []
+				"links": [
+					{
+						"name": "Wikipedia",
+						"link": "https://en.wikipedia.org/wiki/Polynomial_regression",
+						"description": ""
+					}
+				]
 			},
 			"keywords": []
 		},
@@ -952,8 +974,13 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
+						"name": "Towards Data Science",
+						"link": "https://towardsdatascience.com/introduction-to-markov-chains-50da3645a50d",
+						"description": ""
+					},
+					{
+						"name": "Markov Property Wikipedia",
+						"link": "https://en.wikipedia.org/wiki/Markov_property",
 						"description": ""
 					}
 				]
@@ -980,8 +1007,8 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
+						"name": "Wikipedia",
+						"link": "https://en.wikipedia.org/wiki/Markov_model",
 						"description": ""
 					}
 				]
@@ -1008,8 +1035,8 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
+						"name": "Wikipedia",
+						"link": "https://en.wikipedia.org/wiki/Hidden_Markov_model",
 						"description": ""
 					}
 				]
@@ -1036,8 +1063,8 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
+						"name": "Wikipedia",
+						"link": "https://en.wikipedia.org/wiki/Unsupervised_learning",
 						"description": ""
 					}
 				]
@@ -1064,8 +1091,8 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
+						"name": "Wikipedia",
+						"link": "https://en.wikipedia.org/wiki/Semi-supervised_learning",
 						"description": ""
 					}
 				]
@@ -1092,9 +1119,14 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
+						"name": "Wikipedia",
+						"link": "https://en.wikipedia.org/wiki/Reinforcement_learning",
 						"description": ""
+					},
+					{
+						"name": "Reinforcement Learning Warehouse",
+						"link": "http://reinforcementlearning.ai-depot.com/",
+						"description": "This website hosts many tutorials on various reinforcement learning concepts"
 					}
 				]
 			},
@@ -1120,8 +1152,8 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
+						"name": "Wikipedia",
+						"link": "https://en.wikipedia.org/wiki/Anomaly_detection",
 						"description": ""
 					}
 				]
@@ -1148,8 +1180,13 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
+						"name": "Wikipedia",
+						"link": "https://en.wikipedia.org/wiki/Dimensionality_reduction",
+						"description": ""
+					},
+					{
+						"name": "Analytics Vidhya",
+						"link": "https://www.analyticsvidhya.com/blog/2015/07/dimension-reduction-methods/",
 						"description": ""
 					}
 				]
@@ -1176,8 +1213,8 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
+						"name": "PyStruct",
+						"link": "https://pystruct.github.io/intro.html",
 						"description": ""
 					}
 				]
@@ -1204,8 +1241,8 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
+						"name": "Wikipedia",
+						"link": "https://en.wikipedia.org/wiki/Decision_tree",
 						"description": ""
 					}
 				]
@@ -1232,8 +1269,8 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
+						"name": "MIT OpenCourseWare",
+						"link": "https://ocw.mit.edu/courses/sloan-school-of-management/15-062-data-mining-spring-2003/lecture-notes/L3ClassTrees.pdf",
 						"description": ""
 					}
 				]
@@ -1260,8 +1297,8 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
+						"name": "CMU CS 36-350 Data Mining",
+						"link": "http://www.stat.cmu.edu/~cshalizi/350-2006/lecture-10.pdf",
 						"description": ""
 					}
 				]
@@ -1288,8 +1325,8 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
+						"name": "TopTal",
+						"link": "https://www.toptal.com/machine-learning/ensemble-methods-machine-learning",
 						"description": ""
 					}
 				]
@@ -1316,9 +1353,14 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
+						"name": "Gradient Boosting Wikipedia",
+						"link": "https://en.wikipedia.org/wiki/Gradient_boosting",
 						"description": ""
+					},
+					{
+						"name": "Ben Gorman Kaggle Blog Post",
+						"link": "http://blog.kaggle.com/2017/01/23/a-kaggle-master-explains-gradient-boosting/",
+						"description": "This blog post goes in depth on the history, motivations, and techniques of gradient boosting"
 					}
 				]
 			},
@@ -1344,8 +1386,8 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
+						"name": "IEEE",
+						"link": "https://ieeexplore.ieee.org/document/1677518/",
 						"description": ""
 					}
 				]
