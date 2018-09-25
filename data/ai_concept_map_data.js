@@ -180,17 +180,17 @@ const ai_concept_map_data = {
 					{
 						"name": "Coursera: Stanford Machine Learning",
 						"link": "https://www.coursera.org/learn/machine-learning",
-						"description": "This course by Andrew Ng is perfect for machine learning beginners. It covers the topics, math, and motivations for machine learning."
+						"description": "This course by Andrew Ng is perfect for machine learning beginners - it covers the topics, math, and motivations for machine learning"
 					},
 					{
 						"name": "TopTal Machine Learning Primer",
 						"link": "https://www.toptal.com/machine-learning/machine-learning-theory-an-introductory-primer",
-						"description": "This is a great introductory tutorial with an excellent example."
+						"description": "This is a great introductory tutorial with an excellent example"
 					},
 					{
 						"name": "Machine Learning Mastery",
 						"link": "http://machinelearningmastery.com/start-here/#getstarted",
-						"description": "This is one of my favorite blogs. This post is geared towards those just getting started."
+						"description": "This is one of my favorite blogs. This post is geared towards those just getting started"
 					}
 				]
 			},
@@ -216,8 +216,8 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
+						"name": "Wikipedia",
+						"link": "https://en.wikipedia.org/wiki/Supervised_learning",
 						"description": ""
 					}
 				]
@@ -244,9 +244,14 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
+						"name": "Wikipedia",
+						"link": "https://en.wikipedia.org/wiki/Artificial_neural_network",
 						"description": ""
+					},
+					{
+						"name": "Neural Network Zoo",
+						"link": "http://www.asimovinstitute.org/neural-network-zoo/",
+						"description": "This website visualizes common types of neural networks"
 					}
 				]
 			},
@@ -272,8 +277,8 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
+						"name": "Wikipedia",
+						"link": "https://en.wikipedia.org/wiki/Convolutional_neural_network",
 						"description": ""
 					}
 				]
@@ -300,9 +305,14 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
+						"name": "Wikipedia",
+						"link": "https://en.wikipedia.org/wiki/Recurrent_neural_network",
 						"description": ""
+					},
+					{
+						"name": "WILDML Blog",
+						"link": "http://www.wildml.com/2015/09/recurrent-neural-networks-tutorial-part-1-introduction-to-rnns/",
+						"description": "This is a more technical introduction to RNNs"
 					}
 				]
 			},
@@ -330,7 +340,7 @@ const ai_concept_map_data = {
 					{
 						"name": "Understanding LSTM Networks",
 						"link": "https://colah.github.io/posts/2015-08-Understanding-LSTMs/",
-						"description": "Chris Olah provides a great explanation of LSTMs on his blog."
+						"description": "Christopher Olah provides a great explanation of LSTMs on his blog"
 					}
 				]
 			},
@@ -356,9 +366,19 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
+						"name": "Wikipedia",
+						"link": "https://en.wikipedia.org/wiki/Gated_recurrent_unit",
 						"description": ""
+					},
+					{
+						"name": "Towards Data Science",
+						"link": "https://towardsdatascience.com/understanding-gru-networks-2ef37df6c9be",
+						"description": "This blog post provides a more technical background on GRUs"
+					},
+					{
+						"name": "Colah's Blog",
+						"link": "https://colah.github.io/posts/2015-08-Understanding-LSTMs/",
+						"description": "This post from Christopher Olah has a section that explains GRUs in the context of LSTM networks"
 					}
 				]
 			},
@@ -384,8 +404,8 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "",
-						"link": "",
+						"name": "Wikipedia",
+						"link": "https://en.wikipedia.org/wiki/Neural_Turing_machine",
 						"description": ""
 					}
 				]
@@ -412,9 +432,9 @@ const ai_concept_map_data = {
 				"description": "",
 				"links": [
 					{
-						"name": "DeepMind: Differentiable neural computers",
+						"name": "DeepMind: Differentiable Neural Computers",
 						"link": "https://deepmind.com/blog/differentiable-neural-computers/",
-						"description": "DeepMind's blog covers their experience with DNCs."
+						"description": "DeepMind's blog covers their experience with DNCs"
 					}
 				]
 			},
@@ -442,7 +462,7 @@ const ai_concept_map_data = {
 					{
 						"name": "Koutník et al.",
 						"link": "https://arxiv.org/pdf/1402.3511v1.pdf",
-						"description": "This paper from the folks at the Swiss AI lab IDSIA describes the method in full."
+						"description": "This paper from the folks at the Swiss AI lab IDSIA describes the method in full"
 					}
 				]
 			},
