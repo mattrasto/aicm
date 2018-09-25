@@ -1,6 +1,6 @@
 # AI Concept Map
 
-This is the development repo for the AI Concept Map (AICM), a project originally started by me and hosted on my website 7[here](http://www.mattrasto.me/workshop/ai-concept-map/).
+This is the development repo for the AI Concept Map (AICM), a project originally started by me and hosted on my website [here](https://mattrasto.me/workshop/ai_concept_map.html).
 
 ## Usage
 
